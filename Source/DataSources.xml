@@ -18,7 +18,7 @@
  <DataSourceRepository>
   <DataObjects>
  
-<DataObject PhysicalName="eitor4hul" Resident="N" UniqueISNConvState="12" data_source="erahSlqS" id="1" name="eitor4hul">
+<DataObject PhysicalName="eitor4hul" Resident="N" UniqueISNConvState="12" data_source="SqlShare" id="1" name="eitor4hul">
 
   <Encrypt val="N"/>
 
@@ -26,7 +26,7 @@
 
   <IdentifyRowModifications val="U"/>
 
-  <HasHint val="N"/>
+  <HasHint val="Y"/>
 
   <Cursor val="D"/>
 
@@ -56,7 +56,7 @@
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
         <StoredAs id="173" val="4"/>
-        <Size id="174" val="2"/>
+        <Size id="174" val="4"/>
         <Definition id="175" val="2"/>
         <DatabaseInformation id="177"/>
         <DbColumnName id="178" val="Company"/>
@@ -65,6 +65,7 @@
         <_Dec id="181"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192" val="Y"/>
+        <_FieldPhysical Name="Company" PIC_U="N5" Size="2" SqlType="SMALLINT" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -85,6 +86,8 @@
         <DbColumnName id="178" val="Style"/>
         <Type id="179" val="CHAR(20)"/>
         <UserType id="180"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Style" PIC_U="20" Size="20" SqlType="CHAR(20)" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -105,6 +108,8 @@
         <DbColumnName id="178" val="Location"/>
         <Type id="179" val="CHAR(20)"/>
         <UserType id="180"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Location" PIC_U="20" Size="20" SqlType="CHAR(20)" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -123,7 +128,7 @@
       <Primary val="N"/>
       <Segments>
         <Segment>
-          <Size val="2"/>
+          <Size val="4"/>
           <Column val="1"/>
           <Order val="A"/>
         </Segment>
@@ -141,7 +146,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="Companies" Resident="N" UniqueISNConvState="12" data_source="ataDlqS" id="2" name="Companies">
+<DataObject PhysicalName="Companies" Resident="N" UniqueISNConvState="12" data_source="SqlData" id="2" name="Companies">
 
   <Encrypt val="N"/>
 
@@ -149,7 +154,7 @@
 
   <IdentifyRowModifications val="U"/>
 
-  <HasHint val="N"/>
+  <HasHint val="Y"/>
 
   <Cursor val="D"/>
 
@@ -179,7 +184,7 @@
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
         <StoredAs id="173" val="4"/>
-        <Size id="174" val="2"/>
+        <Size id="174" val="4"/>
         <Definition id="175" val="2"/>
         <DatabaseInformation id="177"/>
         <DbColumnName id="178" val="CompNum"/>
@@ -188,6 +193,7 @@
         <_Dec id="181"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192" val="Y"/>
+        <_FieldPhysical Name="CompNum" PIC_U="N5" Size="2" SqlType="SMALLINT" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -208,6 +214,8 @@
         <DbColumnName id="178" val="HebName"/>
         <Type id="179" val="CHAR(30)"/>
         <UserType id="180"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="HebName" PIC_U="30" Size="30" SqlType="CHAR(30)" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -228,6 +236,8 @@
         <DbColumnName id="178" val="HebDisplaySystemName"/>
         <Type id="179" val="CHAR(30)"/>
         <UserType id="180"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="HebDisplaySystemName" PIC_U="30" Size="30" SqlType="CHAR(30)" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -248,6 +258,8 @@
         <DbColumnName id="178" val="VatDetails"/>
         <Type id="179" val="CHAR(60)"/>
         <UserType id="180"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="VatDetails" PIC_U="60" Size="60" SqlType="CHAR(60)" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -268,6 +280,7 @@
         <DbColumnName id="178" val="AllowConsinment"/>
         <Type id="179" val="BIT"/>
         <UserType id="180"/>
+        <_FieldPhysical Name="AllowConsinment" PIC_U="5" Size="1" SqlType="BIT" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -281,8 +294,8 @@
         <NullDefault id="169"/>
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
-        <StoredAs id="173" val="4"/>
-        <Size id="174" val="4"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
         <Definition id="175" val="2"/>
         <DatabaseInformation id="177"/>
         <DbColumnName id="178" val="FactoryNum"/>
@@ -291,6 +304,7 @@
         <_Dec id="181"/>
         <_Whole id="182" val="10"/>
         <_Negative id="192" val="Y"/>
+        <_FieldPhysical Name="FactoryNum" PIC_U="N10" Size="4" SqlType="INTEGER" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -311,6 +325,8 @@
         <DbColumnName id="178" val="PrintingCurrency"/>
         <Type id="179" val="CHAR(3)"/>
         <UserType id="180"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="PrintingCurrency" PIC_U="3" Size="3" SqlType="CHAR(3)" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -331,6 +347,8 @@
         <DbColumnName id="178" val="EngName"/>
         <Type id="179" val="CHAR(30)"/>
         <UserType id="180"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="EngName" PIC_U="30" Size="30" SqlType="CHAR(30)" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -351,6 +369,8 @@
         <DbColumnName id="178" val="EngDisplaySystemName"/>
         <Type id="179" val="CHAR(30)"/>
         <UserType id="180"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="EngDisplaySystemName" PIC_U="30" Size="30" SqlType="CHAR(30)" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -371,6 +391,8 @@
         <DbColumnName id="178" val="EngVatDetails"/>
         <Type id="179" val="CHAR(80)"/>
         <UserType id="180"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="EngVatDetails" PIC_U="80" Size="80" SqlType="CHAR(80)" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -385,7 +407,7 @@
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
         <StoredAs id="173" val="4"/>
-        <Size id="174" val="2"/>
+        <Size id="174" val="4"/>
         <Definition id="175" val="2"/>
         <DatabaseInformation id="177"/>
         <DbColumnName id="178" val="PLPrintFormat"/>
@@ -394,6 +416,7 @@
         <_Dec id="181"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192" val="Y"/>
+        <_FieldPhysical Name="PLPrintFormat" PIC_U="N5" Size="2" SqlType="SMALLINT" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -414,6 +437,7 @@
         <DbColumnName id="178" val="AddVatInReports"/>
         <Type id="179" val="BIT"/>
         <UserType id="180"/>
+        <_FieldPhysical Name="AddVatInReports" PIC_U="5" Size="1" SqlType="BIT" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -437,6 +461,7 @@
         <_Dec id="181" val="3"/>
         <_Whole id="182" val="10"/>
         <_Negative id="192"/>
+        <_FieldPhysical Name="PriceFactor" PIC_U="10.3" Size="8" SqlType="DOUBLE PRECISION" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -457,6 +482,7 @@
         <DbColumnName id="178" val="ActiveCompany"/>
         <Type id="179" val="BIT"/>
         <UserType id="180"/>
+        <_FieldPhysical Name="ActiveCompany" PIC_U="5" Size="1" SqlType="BIT" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -477,6 +503,7 @@
         <DbColumnName id="178" val="DstrbPriceLst"/>
         <Type id="179" val="BIT"/>
         <UserType id="180"/>
+        <_FieldPhysical Name="DstrbPriceLst" PIC_U="5" Size="1" SqlType="BIT" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -491,7 +518,7 @@
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
         <StoredAs id="173" val="6"/>
-        <Size id="174" val="4"/>
+        <Size id="174" val="8"/>
         <Definition id="175" val="2"/>
         <DatabaseInformation id="177"/>
         <DbColumnName id="178" val="RoundinFactor"/>
@@ -500,6 +527,7 @@
         <_Dec id="181" val="2"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192"/>
+        <_FieldPhysical Name="RoundinFactor" PIC_U="5.2" Size="4" SqlType="REAL" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -520,6 +548,7 @@
         <DbColumnName id="178" val="DropACent"/>
         <Type id="179" val="BIT"/>
         <UserType id="180"/>
+        <_FieldPhysical Name="DropACent" PIC_U="5" Size="1" SqlType="BIT" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -540,6 +569,7 @@
         <DbColumnName id="178" val="UpdateSpecialPrices"/>
         <Type id="179" val="BIT"/>
         <UserType id="180"/>
+        <_FieldPhysical Name="UpdateSpecialPrices" PIC_U="5" Size="1" SqlType="BIT" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -563,6 +593,7 @@
         <_Dec id="181" val="3"/>
         <_Whole id="182" val="10"/>
         <_Negative id="192"/>
+        <_FieldPhysical Name="NewUpdateFactor" PIC_U="10.3" Size="8" SqlType="DOUBLE PRECISION" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -583,6 +614,7 @@
         <DbColumnName id="178" val="RoundOnSale"/>
         <Type id="179" val="BIT"/>
         <UserType id="180"/>
+        <_FieldPhysical Name="RoundOnSale" PIC_U="5" Size="1" SqlType="BIT" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -597,7 +629,7 @@
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
         <StoredAs id="173" val="4"/>
-        <Size id="174" val="2"/>
+        <Size id="174" val="4"/>
         <Definition id="175" val="2"/>
         <DatabaseInformation id="177"/>
         <DbColumnName id="178" val="InvoicePrintFormat"/>
@@ -606,6 +638,7 @@
         <_Dec id="181"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192" val="Y"/>
+        <_FieldPhysical Name="InvoicePrintFormat" PIC_U="N5" Size="2" SqlType="SMALLINT" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -626,6 +659,8 @@
         <DbColumnName id="178" val="InvoicePricePicture"/>
         <Type id="179" val="CHAR(10)"/>
         <UserType id="180"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="InvoicePricePicture" PIC_U="10" Size="10" SqlType="CHAR(10)" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -640,7 +675,7 @@
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
         <StoredAs id="173" val="4"/>
-        <Size id="174" val="2"/>
+        <Size id="174" val="4"/>
         <Definition id="175" val="2"/>
         <DatabaseInformation id="177"/>
         <DbColumnName id="178" val="OrderPriceUpdLimit"/>
@@ -649,6 +684,7 @@
         <_Dec id="181"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192" val="Y"/>
+        <_FieldPhysical Name="OrderPriceUpdLimit" PIC_U="N5" Size="2" SqlType="SMALLINT" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -669,6 +705,8 @@
         <DbColumnName id="178" val="PLCurrency"/>
         <Type id="179" val="CHAR(3)"/>
         <UserType id="180"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="PLCurrency" PIC_U="3" Size="3" SqlType="CHAR(3)" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -692,6 +730,7 @@
         <_Dec id="181" val="3"/>
         <_Whole id="182" val="10"/>
         <_Negative id="192"/>
+        <_FieldPhysical Name="PLExchangeRate" PIC_U="10.3" Size="8" SqlType="DOUBLE PRECISION" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -706,7 +745,7 @@
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
         <StoredAs id="173" val="6"/>
-        <Size id="174" val="4"/>
+        <Size id="174" val="8"/>
         <Definition id="175" val="2"/>
         <DatabaseInformation id="177"/>
         <DbColumnName id="178" val="PLAddPercent"/>
@@ -715,6 +754,7 @@
         <_Dec id="181" val="2"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192"/>
+        <_FieldPhysical Name="PLAddPercent" PIC_U="5.2" Size="4" SqlType="REAL" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -729,7 +769,7 @@
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
         <StoredAs id="173" val="6"/>
-        <Size id="174" val="4"/>
+        <Size id="174" val="8"/>
         <Definition id="175" val="2"/>
         <DatabaseInformation id="177"/>
         <DbColumnName id="178" val="VatPercent"/>
@@ -738,6 +778,7 @@
         <_Dec id="181" val="2"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192"/>
+        <_FieldPhysical Name="VatPercent" PIC_U="5.2" Size="4" SqlType="REAL" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -752,7 +793,7 @@
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
         <StoredAs id="173" val="4"/>
-        <Size id="174" val="2"/>
+        <Size id="174" val="4"/>
         <Definition id="175" val="2"/>
         <DatabaseInformation id="177"/>
         <DbColumnName id="178" val="CompRepFormat"/>
@@ -761,6 +802,7 @@
         <_Dec id="181"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192" val="Y"/>
+        <_FieldPhysical Name="CompRepFormat" PIC_U="N5" Size="2" SqlType="SMALLINT" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -784,6 +826,7 @@
         <_Dec id="181" val="3"/>
         <_Whole id="182" val="10"/>
         <_Negative id="192"/>
+        <_FieldPhysical Name="CompRepWeightSplit" PIC_U="10.3" Size="8" SqlType="DOUBLE PRECISION" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -798,7 +841,7 @@
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
         <StoredAs id="173" val="4"/>
-        <Size id="174" val="2"/>
+        <Size id="174" val="4"/>
         <Definition id="175" val="2"/>
         <DatabaseInformation id="177"/>
         <DbColumnName id="178" val="PricingModel"/>
@@ -807,6 +850,7 @@
         <_Dec id="181"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192" val="Y"/>
+        <_FieldPhysical Name="PricingModel" PIC_U="N5" Size="2" SqlType="SMALLINT" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -821,7 +865,7 @@
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
         <StoredAs id="173" val="6"/>
-        <Size id="174" val="4"/>
+        <Size id="174" val="8"/>
         <Definition id="175" val="2"/>
         <DatabaseInformation id="177"/>
         <DbColumnName id="178" val="FromBottomOverloadPe"/>
@@ -830,6 +874,7 @@
         <_Dec id="181" val="2"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192"/>
+        <_FieldPhysical Name="FromBottomOverloadPe" PIC_U="5.2" Size="4" SqlType="REAL" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -844,7 +889,7 @@
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
         <StoredAs id="173" val="6"/>
-        <Size id="174" val="4"/>
+        <Size id="174" val="8"/>
         <Definition id="175" val="2"/>
         <DatabaseInformation id="177"/>
         <DbColumnName id="178" val="FromToProfitPercent"/>
@@ -853,6 +898,7 @@
         <_Dec id="181" val="2"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192"/>
+        <_FieldPhysical Name="FromToProfitPercent" PIC_U="5.2" Size="4" SqlType="REAL" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -873,6 +919,7 @@
         <DbColumnName id="178" val="PrintPriceInPL"/>
         <Type id="179" val="BIT"/>
         <UserType id="180"/>
+        <_FieldPhysical Name="PrintPriceInPL" PIC_U="5" Size="1" SqlType="BIT" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -887,7 +934,7 @@
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
         <StoredAs id="173" val="4"/>
-        <Size id="174" val="2"/>
+        <Size id="174" val="4"/>
         <Definition id="175" val="2"/>
         <DatabaseInformation id="177"/>
         <DbColumnName id="178" val="InvoiceStrct"/>
@@ -896,6 +943,7 @@
         <_Dec id="181"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192" val="Y"/>
+        <_FieldPhysical Name="InvoiceStrct" PIC_U="N5" Size="2" SqlType="SMALLINT" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -916,6 +964,7 @@
         <DbColumnName id="178" val="AutoPriceUpdate"/>
         <Type id="179" val="BIT"/>
         <UserType id="180"/>
+        <_FieldPhysical Name="AutoPriceUpdate" PIC_U="5" Size="1" SqlType="BIT" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -930,7 +979,7 @@
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
         <StoredAs id="173" val="4"/>
-        <Size id="174" val="2"/>
+        <Size id="174" val="4"/>
         <Definition id="175" val="2"/>
         <DatabaseInformation id="177"/>
         <DbColumnName id="178" val="FrontWHCode"/>
@@ -939,6 +988,7 @@
         <_Dec id="181"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192" val="Y"/>
+        <_FieldPhysical Name="FrontWHCode" PIC_U="N5" Size="2" SqlType="SMALLINT" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -953,7 +1003,7 @@
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
         <StoredAs id="173" val="4"/>
-        <Size id="174" val="2"/>
+        <Size id="174" val="4"/>
         <Definition id="175" val="2"/>
         <DatabaseInformation id="177"/>
         <DbColumnName id="178" val="LocalCenterStation"/>
@@ -962,6 +1012,7 @@
         <_Dec id="181"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192" val="Y"/>
+        <_FieldPhysical Name="LocalCenterStation" PIC_U="N5" Size="2" SqlType="SMALLINT" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -982,6 +1033,7 @@
         <DbColumnName id="178" val="PricingSpclRound"/>
         <Type id="179" val="BIT"/>
         <UserType id="180"/>
+        <_FieldPhysical Name="PricingSpclRound" PIC_U="5" Size="1" SqlType="BIT" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -1002,6 +1054,7 @@
         <DbColumnName id="178" val="ECommLocal"/>
         <Type id="179" val="BIT"/>
         <UserType id="180"/>
+        <_FieldPhysical Name="ECommLocal" PIC_U="5" Size="1" SqlType="BIT" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -1016,7 +1069,7 @@
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
         <StoredAs id="173" val="6"/>
-        <Size id="174" val="4"/>
+        <Size id="174" val="8"/>
         <Definition id="175" val="2"/>
         <DatabaseInformation id="177"/>
         <DbColumnName id="178" val="HulLoadPerc"/>
@@ -1025,6 +1078,7 @@
         <_Dec id="181" val="2"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192"/>
+        <_FieldPhysical Name="HulLoadPerc" PIC_U="5.2" Size="4" SqlType="REAL" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -1045,6 +1099,8 @@
         <DbColumnName id="178" val="LongAddress"/>
         <Type id="179" val="CHAR(30)"/>
         <UserType id="180"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="LongAddress" PIC_U="30" Size="30" SqlType="CHAR(30)" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -1065,6 +1121,8 @@
         <DbColumnName id="178" val="MagentoStore"/>
         <Type id="179" val="CHAR(5)"/>
         <UserType id="180"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MagentoStore" PIC_U="5" Size="5" SqlType="CHAR(5)" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -1085,6 +1143,8 @@
         <DbColumnName id="178" val="FWDSN"/>
         <Type id="179" val="CHAR(20)"/>
         <UserType id="180"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="FWDSN" PIC_U="20" Size="20" SqlType="CHAR(20)" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -1099,7 +1159,7 @@
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
         <StoredAs id="173" val="4"/>
-        <Size id="174" val="2"/>
+        <Size id="174" val="4"/>
         <Definition id="175" val="2"/>
         <DatabaseInformation id="177"/>
         <DbColumnName id="178" val="ECommShortDeliveryDa"/>
@@ -1108,6 +1168,7 @@
         <_Dec id="181"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192" val="Y"/>
+        <_FieldPhysical Name="ECommShortDeliveryDa" PIC_U="N5" Size="2" SqlType="SMALLINT" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -1122,7 +1183,7 @@
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
         <StoredAs id="173" val="4"/>
-        <Size id="174" val="2"/>
+        <Size id="174" val="4"/>
         <Definition id="175" val="2"/>
         <DatabaseInformation id="177"/>
         <DbColumnName id="178" val="ECommLongDeliveryDay"/>
@@ -1131,6 +1192,7 @@
         <_Dec id="181"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192" val="Y"/>
+        <_FieldPhysical Name="ECommLongDeliveryDay" PIC_U="N5" Size="2" SqlType="SMALLINT" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -1151,6 +1213,7 @@
         <DbColumnName id="178" val="QtySplit"/>
         <Type id="179" val="BIT"/>
         <UserType id="180"/>
+        <_FieldPhysical Name="QtySplit" PIC_U="5" Size="1" SqlType="BIT" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -1169,7 +1232,7 @@
       <Primary val="N"/>
       <Segments>
         <Segment>
-          <Size val="2"/>
+          <Size val="4"/>
           <Column val="1"/>
           <Order val="A"/>
         </Segment>
@@ -1182,7 +1245,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="NumParam" Resident="N" UniqueISNConvState="12" data_source="ataDlqS" id="3" name="NumParam">
+<DataObject PhysicalName="NumParam" Resident="N" UniqueISNConvState="12" data_source="SqlData" id="3" name="NumParam">
 
   <Encrypt val="N"/>
 
@@ -1190,7 +1253,7 @@
 
   <IdentifyRowModifications val="U"/>
 
-  <HasHint val="N"/>
+  <HasHint val="Y"/>
 
   <Cursor val="D"/>
 
@@ -1220,7 +1283,7 @@
         <DatabaseDefault id="171"/>
         <CharSet id="172" val="1"/>
         <StoredAs id="173" val="4"/>
-        <Size id="174" val="2"/>
+        <Size id="174" val="4"/>
         <Definition id="175" val="2"/>
         <DatabaseInformation id="177"/>
         <DbColumnName id="178" val="ParameterNum"/>
@@ -1229,6 +1292,7 @@
         <_Dec id="181"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192" val="Y"/>
+        <_FieldPhysical Name="ParameterNum" PIC_U="N5" Size="2" SqlType="SMALLINT" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -1249,6 +1313,8 @@
         <DbColumnName id="178" val="ParameterName"/>
         <Type id="179" val="CHAR(20)"/>
         <UserType id="180"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="ParameterName" PIC_U="20" Size="20" SqlType="CHAR(20)" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -1269,6 +1335,8 @@
         <DbColumnName id="178" val="Description"/>
         <Type id="179" val="VARCHAR(20)"/>
         <UserType id="180"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Description" PIC_U="20" Size="20" SqlType="VARCHAR(20)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -1292,6 +1360,7 @@
         <_Dec id="181" val="3"/>
         <_Whole id="182" val="10"/>
         <_Negative id="192"/>
+        <_FieldPhysical Name="NumericValue" PIC_U="10.3" Size="8" SqlType="DOUBLE PRECISION" allowed_null="Y" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -1312,6 +1381,8 @@
         <DbColumnName id="178" val="HebValue"/>
         <Type id="179" val="CHAR(60)"/>
         <UserType id="180"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="HebValue" PIC_U="60" Size="60" SqlType="CHAR(60)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -1332,6 +1403,8 @@
         <DbColumnName id="178" val="EngValue"/>
         <Type id="179" val="CHAR(60)"/>
         <UserType id="180"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="EngValue" PIC_U="60" Size="60" SqlType="CHAR(60)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -1350,7 +1423,7 @@
       <Primary val="N"/>
       <Segments>
         <Segment>
-          <Size val="2"/>
+          <Size val="4"/>
           <Column val="1"/>
           <Order val="A"/>
         </Segment>

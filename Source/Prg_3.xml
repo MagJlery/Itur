@@ -13,7 +13,7 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="Login" ISN_2="1" LastIsn="1" id="3">
+        <Header Description="LoginUser" ISN_2="1" LastIsn="1" id="3">
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -24,14 +24,33 @@
           <SqlWhereExist val="N"/>
           <TaskType val="W"/>
           <Interactive val="Y"/>
+          <RoutePath val="login"/>
           <External val="N"/>
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738223" _time="46288" date="09/03/2022" time="12:51:28"/>
+          <LastModified _date="738223" _time="53664" date="09/03/2022" time="14:54:24"/>
         </Header>
+        <ItemIsn val="2"/>
         <Resource>
-          <Columns/>
+          <Columns>
+            <Column id="33554433" name="vUserName">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_UNICODE" id="1"/>
+                <Picture id="157" valUnicode="30"/>
+                <Size id="174" val="60"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="33554434" name="vPassword">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_UNICODE" id="1"/>
+                <Picture id="157" valUnicode="30"/>
+                <Size id="174" val="60"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+          </Columns>
         </Resource>
         <Information>
           <Key>
@@ -101,6 +120,7 @@
             <Event>
               <EventType val="S"/>
             </Event>
+            <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
                 <DATAVIEW_SRC FlowIsn="1" Type="M">
@@ -109,18 +129,144 @@
                   <Direction val="C"/>
                 </DATAVIEW_SRC>
               </LogicLine>
+              <LogicLine>
+                <Select FieldID="33554433" FlowIsn="33554435" id="33554433">
+                  <Column val="33554433"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="2"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="33554434" FlowIsn="33554436" id="33554434">
+                  <Column val="33554434"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="4"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="33554435" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <PublicObject comp="-1" obj="33554433"/>
+            </Event>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <CallTask FlowIsn="33554437">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
+                  <TaskID comp="-1" obj="5"/>
+                  <Lock val="N"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
             </LogicLines>
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry id="1">
+          <FormEntry _last_isn="5" _last_test_id="5" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
+              <Height id="24" val="222"/>
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
-              <FormName id="311" valUnicode="Login"/>
+              <FormName id="311" valUnicode="LoginUser"/>
             </PropertyList>
+            <Control _test_id="2" id="33554434">
+              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                <Text id="19" valUnicode="UserName"/>
+                <X id="21" val="59"/>
+                <Y id="22" val="56"/>
+                <Width id="23" val="58"/>
+                <Height id="24" val="15"/>
+                <ControlName id="46" val="UserName"/>
+                <Font id="50" val="1"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="1" id="33554433">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                <Model ID="MODEL_WEB_CLIENT" id="1">
+                  <Var FieldID="33554433"/>
+                </Model>
+                <X id="21" val="123"/>
+                <Y id="22" val="56"/>
+                <Width id="23" val="216"/>
+                <Height id="24" val="20"/>
+                <Data FieldID="33554433" id="43"/>
+                <ControlName id="46" val="V_vUserName"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="4" id="33554436">
+              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                <Text id="19" valUnicode="Password"/>
+                <X id="21" val="59"/>
+                <Y id="22" val="106"/>
+                <Width id="23" val="54"/>
+                <Height id="24" val="15"/>
+                <ControlName id="46" val="Password"/>
+                <Font id="50" val="1"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="3" id="33554435">
+              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                <Model ID="MODEL_WEB_CLIENT" id="1">
+                  <Var FieldID="33554434"/>
+                </Model>
+                <X id="21" val="123"/>
+                <Y id="22" val="106"/>
+                <Width id="23" val="216"/>
+                <Height id="24" val="20"/>
+                <Data FieldID="33554434" id="43"/>
+                <ControlName id="46" val="V_vPassword"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="5" id="33554437">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="135"/>
+                <Y id="22" val="181"/>
+                <Width id="23" val="158"/>
+                <Height id="24" val="23"/>
+                <ControlName id="46" val="LogIn"/>
+                <Format id="82" valUnicode="LogIn"/>
+                <RaiseEvent id="234">
+                  <EventType val="U"/>
+                  <PublicObject comp="-1" obj="33554433"/>
+                </RaiseEvent>
+              </PropertyList>
+            </Control>
           </FormEntry>
         </TaskForms>
+        <EVNT DESC="Login" FORCE_EXIT="N" id="33554433">
+          <Event>
+            <EventType val="N"/>
+          </Event>
+        </EVNT>
       </Task>
     </Programs>
   </ProgramsRepository>

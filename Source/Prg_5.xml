@@ -24,11 +24,12 @@
           <SqlWhereExist val="N"/>
           <TaskType val="W"/>
           <Interactive val="Y"/>
+          <RoutePath val="Company"/>
           <External val="N"/>
           <Offline val="N"/>
-          <FormType val="N"/>
+          <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738223" _time="46860" date="09/03/2022" time="13:01:00"/>
+          <LastModified _date="738229" _time="34178" date="15/03/2022" time="09:29:38"/>
         </Header>
         <ItemIsn val="5"/>
         <Resource>
@@ -214,6 +215,7 @@
                   <Wait val="Y"/>
                   <SyncData val="N"/>
                   <IsRoute val="N"/>
+                  <DestSubformName val="Itur_hul"/>
                   <RetainFocus val="N"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -226,13 +228,15 @@
         <TaskForms>
           <FormEntry _last_isn="6" _last_test_id="6" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
+              <X id="21" val="420"/>
+              <Y id="22" val="312"/>
               <Width id="23" val="387"/>
               <Height id="24" val="186"/>
               <FormUnits id="33" val="4"/>
               <RightToLeft id="130"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="Company"/>
-              <WindowType id="358" val="1"/>
+              <WindowType id="358" val="12"/>
             </PropertyList>
             <Control _test_id="5" id="5">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
@@ -272,8 +276,8 @@
             </Control>
             <Control PDOD="128" _test_id="6" id="6">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="125"/>
-                <Y id="22" val="137"/>
+                <X id="21" val="136"/>
+                <Y id="22" val="132"/>
                 <Width id="23" val="123"/>
                 <Height id="24" val="24"/>
                 <ControlName id="46" val="Button6"/>
@@ -296,9 +300,9 @@
             <ExpAttribute val="N"/>
           </Expression>
         </Expressions>
-        <EVNT DESC="OK" FORCE_EXIT="N" id="1">
+        <EVNT DESC="UserOk" FORCE_EXIT="N" id="1">
           <Event>
-            <EventType val="S"/>
+            <EventType val="N"/>
           </Event>
         </EVNT>
       </Task>
