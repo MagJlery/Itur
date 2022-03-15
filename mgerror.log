@@ -12,3 +12,38 @@
  <339284725163804032> 15/03/2022 12:01:10.802     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
  <111277723057564640> 15/03/2022 12:06:43.705     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
  <290325074331299520> 15/03/2022 12:07:21.260     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <89432187333457408> 15/03/2022 12:43:22.987     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <89432187333457408> 15/03/2022 12:43:47.758     [Error  ] - Duplicate index, data source: eitor4hul  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul.Add_Record.add record".
+ <272244014948964288> 15/03/2022 12:43:59.283     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <561059501952646464> 15/03/2022 14:06:38.310     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <561059501952646464> 15/03/2022 14:06:45.633     [Error  ] - Destination subform 'AddRecord' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul".
+ <561059501952646464> 15/03/2022 14:06:45.645     [Error  ] - Duplicate index, data source: eitor4hul  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul.add record".
+ <561059501952646464> 15/03/2022 14:07:07.965     [Error  ] - Destination subform 'AddRecord' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul".
+ <134220597098080976> 15/03/2022 14:10:41.117     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <134220597098080976> 15/03/2022 14:10:52.866     [Error  ] - Destination subform 'AddRecord' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul".
+ <134220597098080976> 15/03/2022 14:10:55.503     [Error  ] - Destination subform 'AddRecord' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul".
+ <134220597098080976> 15/03/2022 14:10:55.513     [Error  ] - Duplicate index, data source: eitor4hul  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul.add record".
+ <134220597098080976> 15/03/2022 14:10:59.106     [Error  ] - Destination subform 'AddRecord' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul".
+ <134220597098080976> 15/03/2022 14:10:59.116     [Error  ] - Duplicate index, data source: eitor4hul  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul.add record".
+ <134220597098080976> 15/03/2022 14:11:02.565     [Error  ] - Destination subform 'AddRecord' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul".
+ <134220597098080976> 15/03/2022 14:11:02.575     [Error  ] - Duplicate index, data source: eitor4hul  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul.add record".
+ <134220597098080976> 15/03/2022 14:11:11.177     [Error  ] - Destination subform 'AddRecord' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul".
+ <134220597098080976> 15/03/2022 14:11:11.187     [Error  ] - Duplicate index, data source: eitor4hul  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul.add record".
+ <4305651699737272> 15/03/2022 14:13:04.668     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <4305651699737272> 15/03/2022 14:13:13.105     [Error  ] - Destination subform 'AddRecord' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul".
+ <4305651699737272> 15/03/2022 14:13:15.557     [Error  ] - Destination subform 'AddRecord' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul".
+ <4305651699737272> 15/03/2022 14:13:15.568     [Error  ] - Duplicate index, data source: eitor4hul  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul.add record".
+ <222607410598949184> 15/03/2022 14:43:24.887     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <222607410598949184> 15/03/2022 14:43:33.525     [Error  ] - Destination subform 'AddRecord' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul".
+ <547939856056437248> 15/03/2022 14:45:12.335     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <547939856056437248> 15/03/2022 14:45:21.084     [Error  ] - Destination subform 'AddRecord' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul".
+ <547939856056437248> 15/03/2022 14:45:55.022     [Error  ] - Destination subform 'AddRecord' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul".
+ <121958659547300816> 15/03/2022 15:10:25.584     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <121958659547300816> 15/03/2022 15:10:51.994     [Error  ] - Aborting context 121958659547300816, Program: "Main Program".
+ <576298500227312832> 15/03/2022 15:11:59.192     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <576298500227312832> 15/03/2022 15:12:25.023     [Error  ] - Aborting context 576298500227312832, Program: "Main Program".
+ <313361281691744640> 15/03/2022 15:13:28.943     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <313361281691744640> 15/03/2022 15:13:53.435     [Error  ] - Aborting context 313361281691744640, Program: "Main Program".
+ <323521007574342272> 15/03/2022 15:15:39.658     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <323521007574342272> 15/03/2022 15:15:55.893     [Error  ] - Destination subform 'AddRecord' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul".
+ <323521007574342272> 15/03/2022 15:16:18.517     [Error  ] - Destination subform 'AddRecord' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul".
