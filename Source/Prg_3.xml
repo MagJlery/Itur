@@ -14,6 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="LoginUser" ISN_2="1" LastIsn="1" id="3">
+          <Public val="login"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -29,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738223" _time="53664" date="09/03/2022" time="14:54:24"/>
+          <LastModified _date="738229" _time="39162" date="15/03/2022" time="10:52:42"/>
         </Header>
         <ItemIsn val="2"/>
         <Resource>
@@ -69,7 +70,7 @@
           <VarRange/>
           <TaskProperties>
             <SelectionTable val="N"/>
-            <ConfirmUpdate CNFU="Y"/>
+            <ConfirmUpdate CNFU="N"/>
             <ConfirmCancel val="N"/>
             <ErrorStrategy val="R"/>
             <LockingStrategy val="M"/>
@@ -191,7 +192,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="5" _last_test_id="5" id="1">
+          <FormEntry _last_isn="6" _last_test_id="6" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Height id="24" val="222"/>
               <FormUnits id="33" val="4"/>
@@ -201,7 +202,7 @@
             <Control _test_id="2" id="33554434">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="UserName"/>
-                <X id="21" val="59"/>
+                <X id="21" val="49"/>
                 <Y id="22" val="56"/>
                 <Width id="23" val="58"/>
                 <Height id="24" val="15"/>
@@ -214,7 +215,7 @@
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="33554433"/>
                 </Model>
-                <X id="21" val="123"/>
+                <X id="21" val="113"/>
                 <Y id="22" val="56"/>
                 <Width id="23" val="216"/>
                 <Height id="24" val="20"/>
@@ -225,7 +226,7 @@
             <Control _test_id="4" id="33554436">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="Password"/>
-                <X id="21" val="59"/>
+                <X id="21" val="49"/>
                 <Y id="22" val="106"/>
                 <Width id="23" val="54"/>
                 <Height id="24" val="15"/>
@@ -238,7 +239,7 @@
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="33554434"/>
                 </Model>
-                <X id="21" val="123"/>
+                <X id="21" val="113"/>
                 <Y id="22" val="106"/>
                 <Width id="23" val="216"/>
                 <Height id="24" val="20"/>
@@ -248,7 +249,7 @@
             </Control>
             <Control PDOD="128" _test_id="5" id="33554437">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="135"/>
+                <X id="21" val="113"/>
                 <Y id="22" val="181"/>
                 <Width id="23" val="158"/>
                 <Height id="24" val="23"/>

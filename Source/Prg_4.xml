@@ -13,7 +13,7 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="Itur_hul" ISN_2="1" LastIsn="1" id="4">
+        <Header Description="Itur_hul" ISN_2="1" LastIsn="5" id="4">
           <Public val="Itur_hul"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -33,7 +33,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738229" _time="34619" date="15/03/2022" time="09:36:59"/>
+          <LastModified _date="738229" _time="43811" date="15/03/2022" time="12:10:11"/>
         </Header>
         <ItemIsn val="5"/>
         <Resource>
@@ -161,7 +161,6 @@
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <Range MAX="1" MIN="1"/>
-                  <_DitIndexForToolkit val="5"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -174,7 +173,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="6"/>
+                  <_DitIndexForToolkit val="4"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -187,7 +186,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="7"/>
+                  <_DitIndexForToolkit val="5"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -216,28 +215,21 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <RaiseEvent FlowIsn="33554446">
+                <CallTask FlowIsn="33554452">
+                  <OperationType val="T"/>
                   <Event>
-                    <EventType val="I"/>
-                    <InternalEventID val="37"/>
+                    <EventType val="N"/>
                   </Event>
-                  <Wait val="78"/>
+                  <TaskID comp="-1" obj="33554436"/>
+                  <Lock val="N"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
-                </RaiseEvent>
-              </LogicLine>
-              <LogicLine>
-                <RaiseEvent FlowIsn="33554447">
-                  <Event>
-                    <EventType val="I"/>
-                    <InternalEventID val="293"/>
-                  </Event>
-                  <Wait val="78"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </RaiseEvent>
+                </CallTask>
               </LogicLine>
               <LogicLine>
                 <RaiseEvent FlowIsn="33554449">
@@ -281,7 +273,7 @@
                 <RaiseEvent FlowIsn="33554448">
                   <Event>
                     <EventType val="I"/>
-                    <InternalEventID val="14"/>
+                    <InternalEventID val="28"/>
                   </Event>
                   <Wait val="78"/>
                   <Condition val="Y"/>
@@ -303,8 +295,8 @@
             <PropertyList model="FORM_WEB_CLIENT">
               <X id="21" val="380"/>
               <Y id="22" val="182"/>
-              <Width id="23" val="424"/>
-              <Height id="24" val="546"/>
+              <Width id="23" val="358"/>
+              <Height id="24" val="533"/>
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="Itur_hul"/>
@@ -313,28 +305,19 @@
               <PropertyList model="CTRL_WEB_CLIENT_TABLE">
                 <X id="21" val="25"/>
                 <Y id="22" val="33"/>
-                <Width id="23" val="375"/>
+                <Width id="23" val="320"/>
                 <Height id="24" val="458"/>
                 <ControlName id="46" val="Table33554433"/>
                 <TitleHeight id="79" val="19"/>
                 <RowHeight id="80" val="24"/>
-                <Elements id="81" val="3"/>
-                <_WindowWidth id="241" val="375"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="33554433" PDOD="128" _test_id="8" id="33554440">
-              <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
-                <Width id="23" val="55"/>
-                <ControlLayer id="25" val="1"/>
-                <ControlName id="46" val="Column33554440"/>
-                <Sortable id="134" val="Y"/>
-                <ColumnTitle id="139" valUnicode="Company"/>
+                <Elements id="81" val="2"/>
+                <_WindowWidth id="241" val="320"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="33554433" PDOD="128" _test_id="10" id="33554442">
               <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
                 <Width id="23" val="154"/>
-                <ControlLayer id="25" val="2"/>
+                <ControlLayer id="25" val="1"/>
                 <ControlName id="46" val="Column33554442"/>
                 <ColumnTitle id="139" valUnicode="Style"/>
               </PropertyList>
@@ -342,23 +325,9 @@
             <Control ISN_FATHER="33554433" PDOD="128" _test_id="12" id="33554444">
               <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
                 <Width id="23" val="154"/>
-                <ControlLayer id="25" val="3"/>
+                <ControlLayer id="25" val="2"/>
                 <ControlName id="46" val="Column33554444"/>
                 <ColumnTitle id="139" valUnicode="Location"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="33554433" _test_id="9" id="33554441">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
-                  <Var FieldID="1"/>
-                </Model>
-                <X id="21" val="29"/>
-                <Y id="22" val="56"/>
-                <Width id="23" val="42"/>
-                <Height id="24" val="20"/>
-                <ControlLayer id="25" val="1"/>
-                <Data FieldID="1" id="43"/>
-                <ControlName id="46" val="eitor4hul_Company"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="33554433" _test_id="11" id="33554443">
@@ -366,11 +335,11 @@
                 <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
                   <Var FieldID="2"/>
                 </Model>
-                <X id="21" val="84"/>
+                <X id="21" val="29"/>
                 <Y id="22" val="56"/>
                 <Width id="23" val="146"/>
                 <Height id="24" val="20"/>
-                <ControlLayer id="25" val="2"/>
+                <ControlLayer id="25" val="1"/>
                 <Data FieldID="2" id="43"/>
                 <ControlName id="46" val="eitor4hul_Style"/>
               </PropertyList>
@@ -380,19 +349,19 @@
                 <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
                   <Var FieldID="3"/>
                 </Model>
-                <X id="21" val="238"/>
+                <X id="21" val="183"/>
                 <Y id="22" val="56"/>
                 <Width id="23" val="146"/>
                 <Height id="24" val="20"/>
-                <ControlLayer id="25" val="3"/>
+                <ControlLayer id="25" val="2"/>
                 <Data FieldID="3" id="43"/>
                 <ControlName id="46" val="eitor4hul_Location"/>
               </PropertyList>
             </Control>
             <Control PDOD="128" _test_id="14" id="33554446">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="94"/>
-                <Y id="22" val="501"/>
+                <X id="21" val="54"/>
+                <Y id="22" val="497"/>
                 <Width id="23" val="80"/>
                 <Height id="24" val="24"/>
                 <ControlName id="46" val="btnAdd"/>
@@ -405,8 +374,8 @@
             </Control>
             <Control PDOD="128" _test_id="15" id="33554447">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="252"/>
-                <Y id="22" val="501"/>
+                <X id="21" val="227"/>
+                <Y id="22" val="497"/>
                 <Width id="23" val="78"/>
                 <Height id="24" val="24"/>
                 <ControlName id="46" val="btnExit"/>
@@ -436,6 +405,599 @@
           </Event>
         </EVNT>
         <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="1"/>
+        <Task MainProgram="N">
+          <Header Description="Add_Record" ISN_2="33554436" LastIsn="5" id="4">
+            <ExecutionRight comp="-1"/>
+            <Resident val="N"/>
+            <SQL val="N"/>
+            <ReturnValue>
+              <ReturnValueAttr/>
+              <ParametersAttributes/>
+            </ReturnValue>
+            <SqlWhereExist val="N"/>
+            <TaskType val="W"/>
+            <Interactive val="Y"/>
+            <External val="N"/>
+            <FormType val="N"/>
+            <DotNetObjectExists val="N"/>
+            <LastModified _date="738229" _time="43129" date="15/03/2022" time="11:58:49"/>
+          </Header>
+          <ItemIsn val="4"/>
+          <Resource>
+            <Columns>
+              <Column id="33554433" name="vCompany">
+                <PropertyList model="FIELD">
+                  <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                  <Picture id="157" valUnicode="N5"/>
+                  <_Dec id="181"/>
+                  <_Whole id="182" val="5"/>
+                  <_Negative id="192" val="Y"/>
+                  <_FieldStyle id="276" val="1"/>
+                </PropertyList>
+              </Column>
+              <Column id="33554434" name="vStyle">
+                <PropertyList model="FIELD">
+                  <Model attr_obj="FIELD_ALPHA" id="1"/>
+                  <Picture id="157" valUnicode="20"/>
+                  <StoredAs id="173" val="1"/>
+                  <Size id="174" val="20"/>
+                  <_Flip id="194"/>
+                </PropertyList>
+              </Column>
+              <Column id="33554435" name="vLocation">
+                <PropertyList model="FIELD">
+                  <Model attr_obj="FIELD_ALPHA" id="1"/>
+                  <Picture id="157" valUnicode="20"/>
+                  <StoredAs id="173" val="1"/>
+                  <Size id="174" val="20"/>
+                  <_Flip id="194"/>
+                </PropertyList>
+              </Column>
+            </Columns>
+          </Resource>
+          <Information>
+            <Key>
+              <Mode val="N"/>
+            </Key>
+            <DB comp="-1"/>
+            <Sort>
+              <CLS val="A"/>
+            </Sort>
+            <ForceRecordDelete DEL="N"/>
+            <EndTaskCondition val="N"/>
+            <EvaluateEndCondition val="B"/>
+            <InitialMode val="M"/>
+            <Locate Direction="A"/>
+            <Range Direction="A"/>
+            <VarRange/>
+            <TaskProperties>
+              <SelectionTable val="N"/>
+              <ConfirmUpdate CNFU="Y"/>
+              <ConfirmCancel val="N"/>
+              <ErrorStrategy val="R"/>
+              <LockingStrategy val="M"/>
+              <CacheStrategy val="N"/>
+              <ForceRecordSuffix val="N"/>
+              <TransactionMode val="O"/>
+              <TransactionBegin val="N"/>
+              <PreloadView val="N"/>
+              <AllowEmptyDataview val="Y"/>
+              <KeepCreatedContext val="N"/>
+            </TaskProperties>
+            <SIDE_WIN>
+              <AllowOptions val="Y"/>
+              <AllowQuery val="Y"/>
+              <AllowModify val="Y"/>
+              <AllowCreate val="Y"/>
+              <AllowDelete val="Y"/>
+              <AllowLocate val="Y"/>
+              <AllowRange val="Y"/>
+              <AllowIndexChange val="Y"/>
+              <AllowSorting val="Y"/>
+              <AllowIOFiles val="N"/>
+              <RecordCycle val="Y"/>
+              <AllowEvents val="Y"/>
+              <AllowIndexOptimization val="Y"/>
+              <AllowLocationInQuery val="Y"/>
+              <AllowPrintingData val="N"/>
+            </SIDE_WIN>
+            <WIN>
+              <OpenTaskWindow val="Y"/>
+              <CloseTaskWindow val="Y"/>
+              <ForegroundWindow val="Y"/>
+              <FlipFld val="N"/>
+              <RefreshTaskWindow ReturnValue="N"/>
+            </WIN>
+            <BOX>
+              <Direction val="V"/>
+            </BOX>
+          </Information>
+          <TaskLogic>
+            <LogicUnit id="33554433" propagate="78">
+              <Level val="R"/>
+              <Type val="M"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+              </Event>
+              <ExecuteOn_ val="O"/>
+              <LogicLines>
+                <LogicLine>
+                  <DATAVIEW_SRC FlowIsn="33554433" Type="M">
+                    <Condition val="N"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </DATAVIEW_SRC>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="33554433" FlowIsn="33554434" id="33554433">
+                    <ASS val="33554433"/>
+                    <Column val="33554433"/>
+                    <Type val="V"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <_DitIndexForToolkit val="2"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="Y"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="33554434" FlowIsn="33554435" id="33554434">
+                    <Column val="33554434"/>
+                    <Type val="V"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <_DitIndexForToolkit val="4"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="Y"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="33554435" FlowIsn="33554436" id="33554435">
+                    <Column val="33554435"/>
+                    <Type val="V"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <_DitIndexForToolkit val="6"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="Y"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+            <LogicUnit id="33554434" propagate="78">
+              <Level val="H"/>
+              <Type val="U"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="U"/>
+                <PublicObject comp="-1" obj="33554433"/>
+              </Event>
+              <ExecuteOn_ val="O"/>
+              <LogicLines>
+                <LogicLine>
+                  <CallTask FlowIsn="33554438">
+                    <OperationType val="T"/>
+                    <Event>
+                      <EventType val="N"/>
+                    </Event>
+                    <TaskID comp="-1" obj="33554437"/>
+                    <Lock val="N"/>
+                    <Wait val="Y"/>
+                    <SyncData val="N"/>
+                    <IsRoute val="N"/>
+                    <RetainFocus val="N"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </CallTask>
+                </LogicLine>
+                <LogicLine>
+                  <RaiseEvent FlowIsn="33554437">
+                    <Event>
+                      <EventType val="I"/>
+                      <InternalEventID val="295"/>
+                    </Event>
+                    <Wait val="78"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </RaiseEvent>
+                </LogicLine>
+                <LogicLine>
+                  <RaiseEvent FlowIsn="33554441">
+                    <Event>
+                      <EventType val="I"/>
+                      <InternalEventID val="594"/>
+                    </Event>
+                    <Wait val="78"/>
+                    <Arguments>
+                      <Argument>
+                        <Expression val="33554434"/>
+                        <Skip val="N"/>
+                      </Argument>
+                      <Argument>
+                        <Skip val="Y"/>
+                      </Argument>
+                    </Arguments>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </RaiseEvent>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+            <LogicUnit id="33554435" propagate="78">
+              <Level val="K"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+              </Event>
+              <ExecuteOn_ val="O"/>
+            </LogicUnit>
+            <LogicUnit id="33554436" propagate="78">
+              <Level val="H"/>
+              <Type val="U"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="U"/>
+                <PublicObject comp="-1" obj="33554435"/>
+              </Event>
+              <ExecuteOn_ val="O"/>
+              <LogicLines>
+                <LogicLine>
+                  <RaiseEvent FlowIsn="33554443">
+                    <Event>
+                      <EventType val="I"/>
+                      <InternalEventID val="594"/>
+                    </Event>
+                    <Wait val="78"/>
+                    <Arguments>
+                      <Argument>
+                        <Expression val="33554434"/>
+                        <Skip val="N"/>
+                      </Argument>
+                      <Argument>
+                        <Skip val="Y"/>
+                      </Argument>
+                    </Arguments>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </RaiseEvent>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+          </TaskLogic>
+          <TaskForms>
+            <FormEntry _last_isn="9" _last_test_id="9" id="1">
+              <PropertyList model="FORM_WEB_CLIENT">
+                <X id="21" val="340"/>
+                <Y id="22" val="169"/>
+                <_Comment id="218"/>
+                <FormName id="311" valUnicode="Add_Record"/>
+                <WindowType id="358" val="1"/>
+              </PropertyList>
+              <Control _test_id="2" id="33554434">
+                <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                  <Text id="19" valUnicode="Company"/>
+                  <X id="21" val="78"/>
+                  <Y id="22" val="79"/>
+                  <Width id="23" val="52"/>
+                  <Height id="24" val="15"/>
+                  <ControlName id="46" val="Company"/>
+                  <Font id="50" val="1"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="1" id="33554433">
+                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                  <Model ID="MODEL_WEB_CLIENT" id="1">
+                    <Var FieldID="33554433"/>
+                  </Model>
+                  <X id="21" val="135"/>
+                  <Y id="22" val="79"/>
+                  <Width id="23" val="42"/>
+                  <Height id="24" val="20"/>
+                  <Data FieldID="33554433" id="43"/>
+                  <ControlName id="46" val="V_vCompany"/>
+                  <Modifiable id="53"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="4" id="33554436">
+                <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                  <Text id="19" valUnicode="Style"/>
+                  <X id="21" val="77"/>
+                  <Y id="22" val="122"/>
+                  <Width id="23" val="31"/>
+                  <Height id="24" val="15"/>
+                  <ControlName id="46" val="Style"/>
+                  <Font id="50" val="1"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="3" id="33554435">
+                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                  <Model ID="MODEL_WEB_CLIENT" id="1">
+                    <Var FieldID="33554434"/>
+                  </Model>
+                  <X id="21" val="135"/>
+                  <Y id="22" val="122"/>
+                  <Width id="23" val="146"/>
+                  <Height id="24" val="20"/>
+                  <Data FieldID="33554434" id="43"/>
+                  <ControlName id="46" val="V_vStyle"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="6" id="33554438">
+                <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                  <Text id="19" valUnicode="Location"/>
+                  <X id="21" val="77"/>
+                  <Y id="22" val="166"/>
+                  <Width id="23" val="49"/>
+                  <Height id="24" val="15"/>
+                  <ControlName id="46" val="Location"/>
+                  <Font id="50" val="1"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="5" id="33554437">
+                <PropertyList model="CTRL_WEB_CLIENT_EDIT">
+                  <Model ID="MODEL_WEB_CLIENT" id="1">
+                    <Var FieldID="33554435"/>
+                  </Model>
+                  <X id="21" val="135"/>
+                  <Y id="22" val="166"/>
+                  <Width id="23" val="146"/>
+                  <Height id="24" val="20"/>
+                  <Data FieldID="33554435" id="43"/>
+                  <ControlName id="46" val="V_vLocation"/>
+                </PropertyList>
+              </Control>
+              <Control PDOD="128" _test_id="8" id="33554440">
+                <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                  <X id="21" val="92"/>
+                  <Y id="22" val="263"/>
+                  <Width id="23" val="77"/>
+                  <Height id="24" val="22"/>
+                  <ControlName id="46" val="btnSave"/>
+                  <Format id="82" valUnicode="Save"/>
+                  <RaiseEvent id="234">
+                    <EventType val="U"/>
+                    <PublicObject comp="-1" obj="33554433"/>
+                  </RaiseEvent>
+                </PropertyList>
+              </Control>
+              <Control PDOD="128" _test_id="9" id="33554441">
+                <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                  <X id="21" val="256"/>
+                  <Y id="22" val="263"/>
+                  <Width id="23" val="72"/>
+                  <Height id="24" val="22"/>
+                  <ControlName id="46" val="btnCancel"/>
+                  <Format id="82" valUnicode="Cancel"/>
+                  <RaiseEvent id="234">
+                    <EventType val="U"/>
+                    <PublicObject comp="-1" obj="33554435"/>
+                  </RaiseEvent>
+                </PropertyList>
+              </Control>
+            </FormEntry>
+          </TaskForms>
+          <Expressions>
+            <Expression id="33554433">
+              <ExpSyntax val="{1,1}"/>
+              <ExpAttribute val="N"/>
+            </Expression>
+            <Expression id="33554434">
+              <ExpSyntax val="'Itur_hul'"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+          </Expressions>
+          <EVNT DESC="Save" FORCE_EXIT="N" id="33554433">
+            <Event>
+              <EventType val="N"/>
+            </Event>
+          </EVNT>
+          <EVNT DESC="Cancel" FORCE_EXIT="N" id="33554435">
+            <Event>
+              <EventType val="N"/>
+            </Event>
+          </EVNT>
+          <Task MainProgram="N">
+            <Header Description="add record" ISN_2="33554437" LastIsn="5" id="4">
+              <ExecutionRight comp="-1"/>
+              <Resident val="N"/>
+              <SQL val="N"/>
+              <ReturnValue>
+                <ReturnValueAttr/>
+                <ParametersAttributes/>
+              </ReturnValue>
+              <SqlWhereExist val="N"/>
+              <TaskType val="B"/>
+              <External val="N"/>
+              <FormType val="N"/>
+              <DotNetObjectExists val="N"/>
+              <LastModified _date="738229" _time="42069" date="15/03/2022" time="11:41:09"/>
+            </Header>
+            <ItemIsn val="3"/>
+            <Resource>
+              <DB id="33554433">
+                <DataObject comp="-1" obj="1"/>
+                <Access val="W"/>
+                <Share val="W"/>
+                <Open val="N"/>
+                <Cache val="Y"/>
+                <IdentifyRowModifications val="84"/>
+              </DB>
+              <Columns/>
+            </Resource>
+            <Information>
+              <Key>
+                <Mode val="N"/>
+              </Key>
+              <DB comp="-1"/>
+              <Sort>
+                <CLS val="A"/>
+              </Sort>
+              <ForceRecordDelete DEL="N"/>
+              <EndTaskCondition val="Y"/>
+              <EvaluateEndCondition val="A"/>
+              <InitialMode val="M"/>
+              <Locate Direction="A"/>
+              <Range Direction="A"/>
+              <VarRange/>
+              <TaskProperties>
+                <SelectionTable val="N"/>
+                <ConfirmUpdate CNFU="Y"/>
+                <ConfirmCancel val="N"/>
+                <ErrorStrategy val="A"/>
+                <LockingStrategy val="I"/>
+                <CacheStrategy val="N"/>
+                <ForceRecordSuffix val="N"/>
+                <TransactionMode val="P"/>
+                <TransactionBegin val="P"/>
+                <PreloadView val="N"/>
+                <AllowEmptyDataview val="N"/>
+                <KeepCreatedContext val="N"/>
+              </TaskProperties>
+              <SIDE_WIN>
+                <AllowOptions val="N"/>
+                <AllowQuery val="Y"/>
+                <AllowModify val="Y"/>
+                <AllowCreate val="Y"/>
+                <AllowDelete val="Y"/>
+                <AllowLocate val="Y"/>
+                <AllowRange val="Y"/>
+                <AllowIndexChange val="Y"/>
+                <AllowSorting val="Y"/>
+                <AllowIOFiles val="N"/>
+                <RecordCycle val="N"/>
+                <AllowEvents val="Y"/>
+                <AllowIndexOptimization val="Y"/>
+                <AllowLocationInQuery val="Y"/>
+                <AllowPrintingData val="N"/>
+              </SIDE_WIN>
+              <WIN>
+                <OpenTaskWindow val="N"/>
+                <CloseTaskWindow val="Y"/>
+                <ForegroundWindow val="Y"/>
+                <FlipFld val="N"/>
+                <RefreshTaskWindow ReturnValue="N"/>
+              </WIN>
+              <BOX>
+                <Direction val="V"/>
+              </BOX>
+            </Information>
+            <TaskLogic>
+              <LogicUnit id="33554433" propagate="78">
+                <Level val="R"/>
+                <Type val="M"/>
+                <Scope val="S"/>
+                <EngineDirective val="S"/>
+                <ShowMessage val="Y"/>
+                <Condition val="89"/>
+                <Event>
+                  <EventType val="S"/>
+                </Event>
+                <LogicLines>
+                  <LogicLine>
+                    <DATAVIEW_SRC FlowIsn="33554433" Type="M">
+                      <Condition val="N"/>
+                      <Modifier val="B"/>
+                      <Direction val="C"/>
+                    </DATAVIEW_SRC>
+                  </LogicLine>
+                  <LogicLine>
+                    <LNK Direction="A" EVL_CND="R" FlowIsn="33554434" Key="1" Mode="A" SortType="33554435" VIEW="1" VIEWS="3">
+                      <DB comp="-1" obj="1"/>
+                      <Condition val="Y"/>
+                    </LNK>
+                  </LogicLine>
+                  <LogicLine>
+                    <Select FieldID="33554434" FlowIsn="33554437" id="33554434">
+                      <ASS val="33554433"/>
+                      <Column val="1"/>
+                      <Type val="R"/>
+                      <ExposedToRoute val="N"/>
+                      <IsParameter val="N"/>
+                      <DIFF_UPDATE val="T"/>
+                      <Condition val="N"/>
+                      <Modifier val="S"/>
+                      <Direction val="C"/>
+                    </Select>
+                  </LogicLine>
+                  <LogicLine>
+                    <Select FieldID="33554433" FlowIsn="33554436" id="33554433">
+                      <ASS val="33554434"/>
+                      <Column val="2"/>
+                      <Type val="R"/>
+                      <ExposedToRoute val="N"/>
+                      <IsParameter val="N"/>
+                      <DIFF_UPDATE val="T"/>
+                      <Condition val="N"/>
+                      <Modifier val="S"/>
+                      <Direction val="C"/>
+                    </Select>
+                  </LogicLine>
+                  <LogicLine>
+                    <Select FieldID="33554435" FlowIsn="33554438" id="33554435">
+                      <ASS val="33554435"/>
+                      <Column val="3"/>
+                      <Type val="R"/>
+                      <ExposedToRoute val="N"/>
+                      <IsParameter val="N"/>
+                      <DIFF_UPDATE val="T"/>
+                      <Condition val="N"/>
+                      <Modifier val="S"/>
+                      <Direction val="C"/>
+                    </Select>
+                  </LogicLine>
+                  <LogicLine>
+                    <END_LINK FlowIsn="33554435"/>
+                  </LogicLine>
+                </LogicLines>
+              </LogicUnit>
+            </TaskLogic>
+            <TaskForms>
+              <FormEntry id="1">
+                <PropertyList model="FORM_GUI0">
+                  <_Comment id="218"/>
+                  <FormName id="311" valUnicode="add record"/>
+                </PropertyList>
+              </FormEntry>
+            </TaskForms>
+            <Expressions>
+              <Expression id="33554433">
+                <ExpSyntax val="{33554436,33554433}"/>
+                <ExpAttribute val="N"/>
+              </Expression>
+              <Expression id="33554434">
+                <ExpSyntax val="{33554436,33554434}"/>
+                <ExpAttribute val="A"/>
+              </Expression>
+              <Expression id="33554435">
+                <ExpSyntax val="{33554436,33554435}"/>
+                <ExpAttribute val="A"/>
+              </Expression>
+            </Expressions>
+          </Task>
+        </Task>
       </Task>
     </Programs>
   </ProgramsRepository>

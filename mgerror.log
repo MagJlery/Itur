@@ -1,1 +1,14 @@
 ﻿ <169393870228701792> 09/03/2022 12:47:38.220     [Error  ] - Online task cannot be executed using a background runtime engine. You should set the Deployment Mode to Online  >> Application: "C:\MagicXPA48\Projects\Itur\", Program: "Browse - eitor4hul".
+ <508148076001143616> 15/03/2022 10:54:42.423     [Error  ] - Aborting context 508148076001143616, Program: "Main Program".
+ <495501401718270656> 15/03/2022 11:25:55.574     [Error  ] - Aborting context 495501401718270656, Program: "Main Program".
+ <321355749742624832> 15/03/2022 11:36:35.469     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <487583857344200000> 15/03/2022 11:46:43.545     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <487583857344200000> 15/03/2022 11:47:08.256     [Error  ] - Aborting context 487583857344200000, Program: "Main Program".
+ <321564467080377728> 15/03/2022 11:49:06.106     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <321564467080377728> 15/03/2022 11:49:50.450     [Error  ] - Aborting context 321564467080377728, Program: "Main Program".
+ <63222160287339448> 15/03/2022 11:53:19.380     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <471750746527958272> 15/03/2022 11:53:44.078     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <562670660701738688> 15/03/2022 12:00:42.872     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <339284725163804032> 15/03/2022 12:01:10.802     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <111277723057564640> 15/03/2022 12:06:43.705     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <290325074331299520> 15/03/2022 12:07:21.260     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".

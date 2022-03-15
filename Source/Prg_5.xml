@@ -14,6 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="Company" ISN_2="1" LastIsn="1" id="5">
+          <Public val="company"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -27,9 +28,9 @@
           <RoutePath val="Company"/>
           <External val="N"/>
           <Offline val="N"/>
-          <FormType val="M"/>
+          <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738229" _time="34178" date="15/03/2022" time="09:29:38"/>
+          <LastModified _date="738229" _time="43403" date="15/03/2022" time="12:03:23"/>
         </Header>
         <ItemIsn val="5"/>
         <Resource>
@@ -173,7 +174,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="3"/>
+                  <_DitIndexForToolkit val="4"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -226,7 +227,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="6" _last_test_id="6" id="1">
+          <FormEntry _last_isn="7" _last_test_id="7" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <X id="21" val="420"/>
               <Y id="22" val="312"/>
@@ -236,16 +237,16 @@
               <RightToLeft id="130"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="Company"/>
-              <WindowType id="358" val="12"/>
+              <WindowType id="358" val="1"/>
             </PropertyList>
             <Control _test_id="5" id="5">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="Company"/>
-                <X id="21" val="33"/>
-                <Y id="22" val="79"/>
-                <Width id="23" val="49"/>
+                <Text id="19" valUnicode="Company Numner"/>
+                <X id="21" val="38"/>
+                <Y id="22" val="54"/>
+                <Width id="23" val="94"/>
                 <Height id="24" val="20"/>
-                <ControlName id="46" val="Label5"/>
+                <ControlName id="46" val="CompanyNum"/>
               </PropertyList>
             </Control>
             <Control _test_id="1" id="1">
@@ -253,12 +254,22 @@
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="4"/>
                 </Model>
-                <X id="21" val="88"/>
-                <Y id="22" val="79"/>
+                <X id="21" val="151"/>
+                <Y id="22" val="54"/>
                 <Width id="23" val="42"/>
                 <Height id="24" val="20"/>
                 <Data FieldID="4" id="43"/>
                 <ControlName id="46" val="Companies_CompNum"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="7" id="33554439">
+              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                <Text id="19" valUnicode="Company Name"/>
+                <X id="21" val="38"/>
+                <Y id="22" val="91"/>
+                <Width id="23" val="75"/>
+                <Height id="24" val="21"/>
+                <ControlName id="46" val="CompanyName"/>
               </PropertyList>
             </Control>
             <Control _test_id="3" id="3">
@@ -266,8 +277,8 @@
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="5"/>
                 </Model>
-                <X id="21" val="136"/>
-                <Y id="22" val="79"/>
+                <X id="21" val="151"/>
+                <Y id="22" val="91"/>
                 <Width id="23" val="216"/>
                 <Height id="24" val="20"/>
                 <Data FieldID="5" id="43"/>
@@ -277,7 +288,7 @@
             <Control PDOD="128" _test_id="6" id="6">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <X id="21" val="136"/>
-                <Y id="22" val="132"/>
+                <Y id="22" val="140"/>
                 <Width id="23" val="123"/>
                 <Height id="24" val="24"/>
                 <ControlName id="46" val="Button6"/>
