@@ -47,3 +47,19 @@
  <323521007574342272> 15/03/2022 15:15:39.658     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
  <323521007574342272> 15/03/2022 15:15:55.893     [Error  ] - Destination subform 'AddRecord' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul".
  <323521007574342272> 15/03/2022 15:16:18.517     [Error  ] - Destination subform 'AddRecord' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company.Itur_hul".
+ <7246524065496251> 22/03/2022 16:22:39.551     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <324947625550929664> 22/03/2022 16:35:05.884     [Error  ] - Aborting context 324947625550929664, Program: "Main Program".
+ <62564887301027232> 22/03/2022 16:37:04.781     [Error  ] - Aborting context 62564887301027232, Program: "Main Program".
+ <150037076954107072> 22/03/2022 16:37:54.589     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <150037076954107072> 22/03/2022 16:38:55.373     [Error  ] - Aborting context 150037076954107072, Program: "Main Program".
+ <391344557008036800> 22/03/2022 16:40:41.086     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <522716545504101824> 22/03/2022 16:41:16.693     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <86302510078923584> 22/03/2022 16:42:44.709     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <150223141638595840> 22/03/2022 16:43:13.534     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <60920484058365960> 22/03/2022 16:44:00.105     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <26656103754163196> 22/03/2022 16:50:39.835     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <346319343477110656> 22/03/2022 16:51:24.524     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <346319343477110656> 22/03/2022 16:53:07.922     [Error  ] - Aborting context 346319343477110656, Program: "Main Program".
+ <413083736631641984> 22/03/2022 16:55:58.749     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
+ <413083736631641984> 22/03/2022 16:56:59.498     [Error  ] - Aborting context 413083736631641984, Program: "Main Program".
+ <453375669753976256> 22/03/2022 17:03:03.068     [Error  ] - Destination subform 'Itur_hul' not found  >> Application: "C:\MagicXpa48\Projects\Itur\", Program: "LoginUser.Company".
