@@ -10,16 +10,23 @@ generating components
 [V-CLI] cmd.exe /c ng g @magic-xpa/cli:magic
 [>]  ********************************* START    GENERATE *********************************
    Number of modules to be check for generate: 1
-[>]           ******    Start Web Module name : []    *******
+  [>]Handling Web Module named:   [Maintenance]   isLoadOnDemand:   [true]
+         [>] add New Web Module    :[MagicRoutingModule] 
+         [>]         from          :[./app.routes]
+         [>]         To App Module :[.//src/app/magic/Maintenance/magic.gen.lib.module.ts]
+[>]           ******    Start Web Module name : [Maintenance]    *******
 *** Step 1: Loading JSON files ***
-[>] Loading JSON file .//magic-metadata/Itur_hul/Itur_hul.json
+[>] Loading JSON file .//magic-metadata/Maintenance/IturHulCrud/IturHulCrud.json
 *** Step 2: Processing JSON files -  (1 components) ***
-[>] Processing JSON file for component Itur_hul
+[>] Processing JSON file for component IturHulCrud
 *** Step 3: generate components. (1 components) ***
-[>] generate component Itur_hul
+[>] generate component IturHulCrud
 [>] Step 4: components-list.
 [>]  ********************************* E N D    GENERATE *********************************
-UPDATE src/app/magic/Itur_hul/Itur_hul.mg.controls.g.ts (1727 bytes)
+UPDATE src/app/magic/Maintenance/IturHulCrud/IturHulCrud.mg.controls.g.ts (1046 bytes)
+UPDATE src/app/magic/Maintenance/IturHulCrud/IturHulCrud.component.ts (1755 bytes)
+UPDATE src/app/magic/Maintenance/IturHulCrud/IturHulCrud.component.html (2069 bytes)
+UPDATE angular.json (3741 bytes)
 
 
 

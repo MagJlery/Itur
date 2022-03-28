@@ -1,0 +1,94 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"StartProgram",
+		"custom_properties":	[
+			"LoggedIn",
+			"Menu"
+		],
+		"component_path":	"Main/StartProgram/",
+		"component_uniquename":	"StartProgram_StartProgram"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	1016,
+		"height":	583
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vUser",
+				"mgformat":	"mgFormat",
+				"attribute":	"A",
+				"common_line_id":	"line43"
+			},
+			"coordinates":	{
+				"x":	136,
+				"y":	43,
+				"width":	216,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"vPassword",
+				"password_edit":	true,
+				"mgformat":	"mgFormat",
+				"attribute":	"A",
+				"common_line_id":	"line67"
+			},
+			"coordinates":	{
+				"x":	136,
+				"y":	69,
+				"width":	216,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"bLogin",
+				"format":	"Login",
+				"common_line_id":	"line67"
+			},
+			"coordinates":	{
+				"x":	381,
+				"y":	67,
+				"width":	41,
+				"height":	22
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"MainOutlet",
+				"is_router_outlet":	true,
+				"default_outlet":	true,
+				"common_line_id":	"line197"
+			},
+			"coordinates":	{
+				"x":	118,
+				"y":	197,
+				"width":	612,
+				"height":	316
+			},
+			"hint":	null,
+			"controlType":	"F",
+			"children":	null
+		}
+	]
+}

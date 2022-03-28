@@ -1,0 +1,19 @@
+[
+	{
+		"module_name":	"",
+		"routesArray":	[
+			{
+				"RouteName":	"Locations",
+				"ModuleName":	"Maintenance",
+				"OutletName":	"",
+				"children":	null
+			}
+		]
+	},
+	{
+		"module_name":	"Maintenance",
+		"routesArray":	[
+			
+		]
+	}
+]

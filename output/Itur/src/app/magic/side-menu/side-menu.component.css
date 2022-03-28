@@ -1,0 +1,42 @@
+a {
+    font-size: 15px;
+    color:white;
+    font-weight:normal;
+    text-align: left;
+    text-decoration: none;
+  }
+  
+  span {
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: bold;
+      color:#d0d8e5;
+      display: block;
+      cursor: pointer;
+      text-align: left;
+    }
+  
+  a:hover {
+      color: black;
+      co_lor: #eb4949;
+      font-weight:normal;
+    }
+  span:hover {
+      color: #a9ce07;
+      font-weight:bold;
+    }
+  
+  ul {
+      list-style-type: none;
+      padding: 0;
+      }
+  
+  ul li {
+      padding: 0px 16px;
+      list-style-type: none;
+      }
+  
+  .onOff{
+      display: none;
+      }
+  

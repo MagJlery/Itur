@@ -27,7 +27,10 @@
               "src/styles.css",
               ".//src/magic-styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "lazyModules": [
+              "src/app/magic/Maintenance/magic.gen.lib.module"
+            ]
           },
           "configurations": {
             "production": {

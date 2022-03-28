@@ -5,16 +5,18 @@ import { NgModule } from '@angular/core';
 export const routes: Routes = [
 
     {
-        path: 'Locations',
-        loadChildren: () => import(`./magic/Maintenance/magic.gen.lib.module`).then(m => m.MagicMaintenanceModule),
+        path: '',
+        component: RouterContainerMagicComponent,
+        children: [
 
-    },
 
+        ]
+    }
 ];
 
 @NgModule({
     imports: [CommonModule,
-        RouterModule.forRoot(routes)
+        RouterModule.forChild(routes)
     ],
     exports: [RouterModule]
 })

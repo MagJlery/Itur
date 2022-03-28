@@ -13,12 +13,12 @@
 	"project_name":	"Itur",
 	"web_modules":	[
 		{
-			"module_name":	"",
-			"load_on_demand":	false,
+			"module_name":	"Maintenance",
+			"load_on_demand":	true,
 			"form_files":	[
-				"Itur_hul/Itur_hul"
+				"IturHulCrud/IturHulCrud"
 			]
 		}
 	],
-	"controls_accessor_only":	true
+	"controls_accessor_only":	false
 }

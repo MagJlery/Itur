@@ -8,7 +8,7 @@ import {DynamicModule} from 'ng-dynamic-component';
 import {InfiniteScrollModule} from 'ngx-infinite-scroll';
 
 import {ComponentListMagicService, MagicModule, ExitMagicService} from "@magic-xpa/angular";
-import {magicGenComponents, magicGenCmpsHash, title, LazyLoadModulesMap} from './component-list.g';
+import {magicGenComponents, magicGenCmpsHash, title} from './component-list.g';
 import {MagicAngularMaterialModule} from "@magic-xpa/angular-material-core";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatSelectModule} from "@angular/material/select";
@@ -28,7 +28,7 @@ import {MatTooltipModule} from "@angular/material/tooltip";
 import {MatButtonModule} from "@angular/material/button";
 import {MatAutocompleteModule} from "@angular/material/autocomplete";
 import {CurrencyMaskInputMode, NgxCurrencyModule } from "ngx-currency";
-import { SideMenuComponent } from './side-menu/side-menu.component';
+import { MagicRoutingModule } from './app.routes';
 
 export const customCurrencyMaskConfig = {
   align: "right",
@@ -47,8 +47,7 @@ export const customCurrencyMaskConfig = {
 
 @NgModule({
   declarations: [
-    ...magicGenComponents,
-    SideMenuComponent
+    ...magicGenComponents
   ],
   exports: [
     ...magicGenComponents,
@@ -84,14 +83,14 @@ export const customCurrencyMaskConfig = {
     MatNativeDateModule,
     MatFormFieldModule,
     MagicAngularMaterialModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    MagicRoutingModule
   ],
   providers: [ExitMagicService],
 })
-export class MagicGenLibModule {
+export class MagicMaintenanceModule {
   constructor(componentList: ComponentListMagicService, private moduleRef: NgModuleRef<any>) {
     componentList.addComponents(magicGenCmpsHash, moduleRef);
-    componentList.title = title; 
-    componentList.lazyLoadModulesMap = LazyLoadModulesMap; 
+    componentList.title = title;
   }
 }

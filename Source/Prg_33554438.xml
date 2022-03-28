@@ -28,9 +28,9 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738242" _time="49525" date="28/03/2022" time="13:45:25"/>
+          <LastModified _date="738242" _time="55442" date="28/03/2022" time="15:24:02"/>
         </Header>
-        <ItemIsn val="4"/>
+        <ItemIsn val="6"/>
         <Resource>
           <Columns>
             <Column id="33554433" name="vUser">
@@ -58,6 +58,24 @@
               </PropertyList>
             </Column>
             <Column id="33554436" name="vCompanyName">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="30"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="30"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="33554437" name="Route name">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="30"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="30"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="33554438" name="Outlet name">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
                 <Picture id="157" valUnicode="30"/>
@@ -206,6 +224,68 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
+          <LogicUnit id="33554436" propagate="89">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="594"/>
+            </Event>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <Select FieldID="33554437" FlowIsn="33554443" id="33554437">
+                  <Column val="33554437"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="33554438" FlowIsn="33554444" id="33554438">
+                  <Column val="33554438"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="33554445">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                  </Event>
+                  <TaskID comp="-1" obj="33554440"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="33554436"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="Y"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
           <LogicUnit id="33554435" propagate="78">
             <Level val="H"/>
             <Type val="U"/>
@@ -291,6 +371,10 @@
                     <Name val="User"/>
                     <Expression val="33554437"/>
                   </CustomProperty>
+                  <CustomProperty>
+                    <Name val="Company"/>
+                    <Expression val="33554438"/>
+                  </CustomProperty>
                 </CustomProperties>
               </CustomProperties>
             </PropertyList>
@@ -369,7 +453,11 @@
             <ExpAttribute val="N"/>
           </Expression>
           <Expression id="33554437">
-            <ExpSyntax val="Trim({0,33554433})&amp;' '&amp;Trim({0,33554436})"/>
+            <ExpSyntax val="Trim({0,33554433})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="33554438">
+            <ExpSyntax val="Trim({0,33554436})"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
