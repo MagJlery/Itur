@@ -32,13 +32,13 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738242" _time="55462" date="28/03/2022" time="15:24:22"/>
+          <LastModified _date="738242" _time="56858" date="28/03/2022" time="15:47:38"/>
         </Header>
         <ItemIsn val="19"/>
         <Resource>
           <DB id="1">
             <DataObject comp="-1" obj="1"/>
-            <Access val="R"/>
+            <Access val="W"/>
             <Share val="W"/>
             <Open val="N"/>
             <Cache val="Y"/>
@@ -493,8 +493,9 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="33554437" FlowIsn="33554511" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                <STP Buttons="K" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="33554437" FlowIsn="33554511" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
                   <AppendToErrorLog val="N"/>
+                  <RetValVar val="33554449"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -508,45 +509,22 @@
                 </BLOCK>
               </LogicLine>
               <LogicLine>
-                <CallTask FlowIsn="33554514">
-                  <OperationType val="P"/>
+                <RaiseEvent FlowIsn="33554514">
                   <Event>
-                    <EventType val="N"/>
+                    <EventType val="I"/>
+                    <InternalEventID val="36"/>
                   </Event>
-                  <TaskID comp="-1" obj="33554442"/>
-                  <Lock val="N"/>
-                  <Arguments>
-                    <Argument>
-                      <Expression val="33554446"/>
-                      <Skip val="N"/>
-                    </Argument>
-                    <Argument>
-                      <Expression val="33554441"/>
-                      <Skip val="N"/>
-                    </Argument>
-                    <Argument>
-                      <Expression val="33554444"/>
-                      <Skip val="N"/>
-                    </Argument>
-                    <Argument>
-                      <Expression val="33554445"/>
-                      <Skip val="N"/>
-                    </Argument>
-                  </Arguments>
-                  <Wait val="Y"/>
-                  <SyncData val="N"/>
-                  <IsRoute val="N"/>
-                  <RetainFocus val="N"/>
+                  <Wait val="78"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
-                </CallTask>
+                </RaiseEvent>
               </LogicLine>
               <LogicLine>
-                <RaiseEvent FlowIsn="33554535">
+                <RaiseEvent FlowIsn="33554541">
                   <Event>
                     <EventType val="I"/>
-                    <InternalEventID val="295"/>
+                    <InternalEventID val="293"/>
                   </Event>
                   <Wait val="78"/>
                   <Condition val="Y"/>
@@ -806,7 +784,7 @@
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="33554437">
-            <ExpSyntax val="'You sure are you want to delete?'"/>
+            <ExpSyntax val="'You want delete the record?'"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="33554438">

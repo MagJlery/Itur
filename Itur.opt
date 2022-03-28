@@ -9,10 +9,6 @@
 
   <RIAExecutionPlatform Val="Desktop"/>
 
-  <Breakpoints>
-    <DelAll/>
-  </Breakpoints>
-
   <WatchListItems>
     <RestData/>
   </WatchListItems>
