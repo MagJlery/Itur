@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738229" _time="43403" date="15/03/2022" time="12:03:23"/>
+          <LastModified _date="738242" _time="41136" date="28/03/2022" time="11:25:36"/>
         </Header>
         <ItemIsn val="5"/>
         <Resource>
@@ -237,7 +237,7 @@
               <RightToLeft id="130"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="Company"/>
-              <WindowType id="358" val="1"/>
+              <WindowType id="358" val="12"/>
             </PropertyList>
             <Control _test_id="5" id="5">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
