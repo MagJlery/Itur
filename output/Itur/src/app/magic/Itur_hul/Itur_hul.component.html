@@ -1,0 +1,92 @@
+<div novalidate [formGroup]="screenFormGroup" class="MainForm">
+    <div style="display: flex; flex-direction: column" [magic]="mgc.Itur_hul">
+
+        <div class="SearchPane">
+            <input class="form-control" [magic]="mgc.vSearch" style="width:30%" [formControlName]="mgc.vSearch" placeholder="Search" />
+        </div>
+        <div class="SearchPane">
+            <label class="Lbl" for="StyleId">Style</label>
+            <input class="form-control" style="width:30%" [formControlName]="mgc.V_vStyle" [magic]="mgc.V_vStyle" mgFormat
+              id="StyleId" />
+            <mgError [magic]=mgc.V_vStyle></mgError>
+      
+            <label class="Lbl" for="LocationId">Location</label>
+            <input class="form-control" style="width:30%" [formControlName]="mgc.V_vLocation" [magic]="mgc.V_vLocation" mgFormat
+              id="LocationId" />
+            <mgError [magic]=mgc.V_vLocation></mgError>
+
+            <button class="btn btn-outline-primary ActionButton" accesskey="A" [magic]="mgc.btnAdd">
+              Add
+            </button>
+          </div>
+
+          <div class="form-group">
+
+
+        </div>
+
+
+
+        <div style="display: flex; flex-direction: row">
+            <div >
+                <mat-table #table [dataSource]="dataSource" class="container_border" matSort matSortDisableClear
+                    (matSortChange)="tableService.sortData($event)">
+                    <ng-container [magic]="mgc.Column33554442" [matColumnDef]="mgc.Column33554442">
+                        <mat-header-cell *matHeaderCellDef class="cLarge">
+                            Style
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer" class="cLarge">
+                            <div  *ngIf="mg.ifRowCreated(row)">
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                            {{mg.getValue(mgc.eitor4hul_Style, row.rowId)}}
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container [magic]="mgc.Column33554444" [matColumnDef]="mgc.Column33554444">
+                        <mat-header-cell *matHeaderCellDef  class="cLarge">
+                            Location
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer"  class="cLarge">
+                            <div  *ngIf="mg.ifRowCreated(row)">
+                                <div [formGroup]="mg.getFormGroupByRow(row.rowId)">
+                                            {{mg.getValue(mgc.eitor4hul_Location, row.rowId)}}
+                                </div>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+
+                    <ng-container [magic]="mgc.cEdit" [matColumnDef]="mgc.cEdit">
+                        <mat-header-cell *matHeaderCellDef class="cBtn"> </mat-header-cell>
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer" class="tbl_btn cBtn">
+                          <div *ngIf="mg.ifRowCreated(row)">
+                            <button class="btn btn-outline-primary tbl_btn" [magic]="mgc.bEdit" [rowId]="row.rowId" [matTooltip]="mg.getTitle(mgc.bEdit, row.rowId)">
+                              <i class="fa fa-edit"></i>
+                            </button>
+                          </div>
+                        </mat-cell>
+                      </ng-container>
+                      <ng-container [magic]="mgc.cDel" [matColumnDef]="mgc.cDel">
+                        <mat-header-cell *matHeaderCellDef class="cBtn"> </mat-header-cell>
+                        <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer" class="tbl_btn cBtn">
+                          <div *ngIf="mg.ifRowCreated(row)">
+                            <button class="btn btn-outline-primary tbl_btn" [magic]="mgc.bDelete" [rowId]="row.rowId" [matTooltip]="mg.getTitle(mgc.bDelete, row.rowId)">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </div>
+                        </mat-cell>
+                      </ng-container>
+            
+
+
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: displayedColumns;" class="table_row"
+                        [ngClass]="{ 'selected': selection.isSelected(row)}" [magicRow]="row?.rowId"
+                        (click)="row? tableService.selectRow(row.rowId) : null">
+                    </mat-row>
+                </mat-table>
+                <mat-paginator #paginator [pageSize]="15" (page)="tableService.mgOnPaginateChange($event)"></mat-paginator>
+            </div>
+        </div>
+    </div>
+</div>

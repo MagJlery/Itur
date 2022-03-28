@@ -1,0 +1,79 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.Add_Record"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Company"
+                class="lable_overflow mgFont1"
+            >
+                Company
+            </label>
+            <label [magic]="mgc.V_vCompany">
+                {{mg.getValue(mgc.V_vCompany) }}
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Style"
+                class="lable_overflow mgFont1"
+            >
+                Style
+            </label>
+            <div>
+                <mat-form-field>
+                    <div>
+                        <input
+                            matInput
+                            [magic]="mgc.V_vStyle"
+                            [formControlName]="mgc.V_vStyle"
+                            mgFormat
+                        >
+                        <mgError [magic]=mgc.V_vStyle> </mgError>
+                    </div>
+                </mat-form-field>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Location"
+                class="lable_overflow mgFont1"
+            >
+                Location
+            </label>
+            <div>
+                <mat-form-field>
+                    <div>
+                        <input
+                            matInput
+                            [magic]="mgc.V_vLocation"
+                            [formControlName]="mgc.V_vLocation"
+                            mgFormat
+                        >
+                        <mgError [magic]=mgc.V_vLocation> </mgError>
+                    </div>
+                </mat-form-field>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button
+                mat-raised-button
+                color="primary"
+                [magic]="mgc.btnSave"
+            >
+                Save
+            </button>
+            <button
+                mat-raised-button
+                color="primary"
+                [magic]="mgc.btnCancel"
+            >
+                Cancel
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,109 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"Company",
+		"rtol":	false,
+		"window_type":	1,
+		"component_path":	"Company/",
+		"component_uniquename":	"Company_Company"
+	},
+	"coordinates":	{
+		"x":	420,
+		"y":	312,
+		"width":	387,
+		"height":	186
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CompanyNum",
+				"text":	"Company Numner",
+				"common_line_id":	"line54"
+			},
+			"coordinates":	{
+				"x":	38,
+				"y":	54,
+				"width":	94,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Companies_CompNum",
+				"items_list":	"\\-32768-32767",
+				"mgformat":	"mgFormat",
+				"validator":	"rangevalidator",
+				"attribute":	"N",
+				"common_line_id":	"line54"
+			},
+			"coordinates":	{
+				"x":	151,
+				"y":	54,
+				"width":	42,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"CompanyName",
+				"text":	"Company Name",
+				"common_line_id":	"line91"
+			},
+			"coordinates":	{
+				"x":	38,
+				"y":	91,
+				"width":	75,
+				"height":	21
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Companies_EngName",
+				"mgformat":	"mgFormat",
+				"attribute":	"A",
+				"common_line_id":	"line91"
+			},
+			"coordinates":	{
+				"x":	151,
+				"y":	91,
+				"width":	216,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Button6",
+				"format":	"Ok",
+				"common_line_id":	"line140"
+			},
+			"coordinates":	{
+				"x":	136,
+				"y":	140,
+				"width":	123,
+				"height":	24
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

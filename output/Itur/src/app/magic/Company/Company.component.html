@@ -1,0 +1,63 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.Company"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.CompanyNum"
+                class="lable_overflow"
+            >
+                Company Numner
+            </label>
+            <div>
+                <mat-form-field>
+                    <div>
+                        <input
+                            matInput
+                            type='number'
+                            [magic]="mgc.Companies_CompNum"
+                            [formControlName]="mgc.Companies_CompNum"
+                            mgFormat
+                            rangevalidator
+                        >
+                        <mgError [magic]=mgc.Companies_CompNum> </mgError>
+                    </div>
+                </mat-form-field>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.CompanyName"
+                class="lable_overflow"
+            >
+                Company Name
+            </label>
+            <div>
+                <mat-form-field>
+                    <div>
+                        <input
+                            matInput
+                            [magic]="mgc.Companies_EngName"
+                            [formControlName]="mgc.Companies_EngName"
+                            mgFormat
+                        >
+                        <mgError [magic]=mgc.Companies_EngName> </mgError>
+                    </div>
+                </mat-form-field>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button
+                mat-raised-button
+                color="primary"
+                [magic]="mgc.Button6"
+            >
+                Ok
+            </button>
+        </div>
+    </div>
+</div>

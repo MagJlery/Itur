@@ -1,0 +1,61 @@
+<div
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        [magic]="mgc.LoginUser"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.UserName"
+                class="lable_overflow mgFont1"
+            >
+                UserName
+            </label>
+            <div>
+                <mat-form-field>
+                    <div>
+                        <input
+                            matInput
+                            [magic]="mgc.V_vUserName"
+                            [formControlName]="mgc.V_vUserName"
+                            mgFormat
+                        >
+                        <mgError [magic]=mgc.V_vUserName> </mgError>
+                    </div>
+                </mat-form-field>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <label
+                [magic]="mgc.Password"
+                class="lable_overflow mgFont1"
+            >
+                Password
+            </label>
+            <div>
+                <mat-form-field>
+                    <div>
+                        <input
+                            matInput
+                            [magic]="mgc.V_vPassword"
+                            [formControlName]="mgc.V_vPassword"
+                            mgFormat
+                        >
+                        <mgError [magic]=mgc.V_vPassword> </mgError>
+                    </div>
+                </mat-form-field>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button
+                mat-raised-button
+                color="primary"
+                [magic]="mgc.LogIn"
+            >
+                LogIn
+            </button>
+        </div>
+    </div>
+</div>

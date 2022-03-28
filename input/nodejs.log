@@ -1,0 +1,29 @@
+Generation output:
+
+C:\MagicXpa48\Projects\Itur\output\Itur>echo off 
+copying files
+
+
+
+C:\MagicXpa48\Projects\Itur\output\Itur>echo off 
+generating components
+[V-CLI] cmd.exe /c ng g @magic-xpa/cli:magic
+[>]  ********************************* START    GENERATE *********************************
+   Number of modules to be check for generate: 1
+[>]           ******    Start Web Module name : []    *******
+*** Step 1: Loading JSON files ***
+[>] Loading JSON file .//magic-metadata/Itur_hul/Itur_hul.json
+*** Step 2: Processing JSON files -  (1 components) ***
+[>] Processing JSON file for component Itur_hul
+*** Step 3: generate components. (1 components) ***
+[>] generate component Itur_hul
+[>] Step 4: components-list.
+[>]  ********************************* E N D    GENERATE *********************************
+UPDATE src/app/magic/Itur_hul/Itur_hul.mg.controls.g.ts (1727 bytes)
+
+
+
+Generation warnings/errors:
+Your global Angular CLI version (13.2.5) is greater than your local version (10.2.4). The local Angular CLI version is used.
+
+To disable this warning use "ng config -g cli.warnings.versionMismatch false".

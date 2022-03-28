@@ -1,0 +1,578 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.align_center {
+  text-align: center;
+}
+
+.align_right {
+  text-align: right;
+}
+
+.multiline {
+  word-break: break-all;
+  white-space: pre-line;
+}
+
+.edit_multiline {
+  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.thin_border {
+  border: 1px solid #f00;
+}
+
+.thick_border {
+  border: 2px solid #f00;
+}
+
+.hidden_border {
+  border-style: hidden;
+}
+
+.emboss_border {
+  border: 1px solid;
+}
+
+.threed_border {
+  border-style: outset;
+}
+
+.threedsunken_border {
+  border-style: inset;
+}
+
+.twod_border {
+  border: 2px solid;
+}
+
+.windows_border {
+  border: 2px solid;
+}
+
+.tab_control {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab_button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+}
+
+.tab_button_active {
+  background-color: #ccc;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+}
+
+.tab_button:hover {
+  background-color: #ddd;
+}
+
+.tab_content {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  border-left: none;
+  border-right:none;
+  clear: both;
+}
+
+/* style for input on table*/
+.InputPropsForRowEditing {
+  text-decoration: underline;
+}
+
+.button_image_background_size {
+  background-size: 100% 100%;
+}
+
+.lable_overflow {
+  overflow: hidden;
+}
+
+.table_scrollBar {
+  height: 600px;
+  overflow-y: scroll;
+}
+
+.container_border {
+  border: #e4e4e4 1px;
+  border-radius: 6px;
+  min-height: 50vh;
+}
+
+.selected {
+  background-color: #CFD3F6 !important;
+  border: black solid 1px !important;
+  b__ox-shadow: 0px 7px 20px lightgray;
+}
+
+.table_row:hover {
+  background-color: #e4e4e4 !important;
+}
+/* remark : we decided to give the end user the normal list box without you update the behavior*/
+/*for material list box control*/
+/*hide the check box*/
+/*mat-list-option mat-pseudo-checkbox.mat-pseudo-checkbox{*/
+/*display: none;*/
+/*}*/
+/*!*for material list box control*!*/
+/*!* for selected item that is true the style will be by following *!*/
+/*mat-list-option[aria-selected = "true"]*/
+/*{*/
+/*background-color: blue;*/
+/*}*/
+
+input{
+  height: 1cm;
+}
+
+.mat-header-row {
+  background-color:#fbfbfb ;
+  font-size: 1rem !important;
+  height: 35px !important;
+  min-height: 25px !important;
+  border-color: cornflowerblue;
+  border-left: 1px solid #3239ff;
+  border-right: 1px solid #3239ff;
+  border-top: 1px solid #3239ff;
+  color: #3239ff;
+  border-radius: 6px 6px 0px 0px;
+}
+
+mat-header-cell {
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  color: #3239ff !important;
+  height: 21px !important;
+
+}
+
+.mat-row {
+  background-color: white;
+  font-size: 1rem !important;
+  height: 30px !important;
+  min-height: 25px !important;
+  b_order: 1px solid #ccc;
+  border-left: 1px solid #3239ff;
+  border-right: 1px solid #3239ff;
+
+}
+table{
+  bo_rder: 1px solid #ccc;
+}
+
+
+mat-cell {
+  font-size: 1rem !important;
+  color: black !important;
+  height: 26px !important;
+}
+
+.MainForm {
+  padding: 0.2cm;
+  b_ackground-color: lightgreen;
+  w_idth: 90vw;
+}
+
+.SearchPane {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  padding-bottom: 0.2cm;
+}
+.ButtonsPane {
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.3cm;
+  padding-bottom: 0.2cm;
+  }
+
+  .NavButton {
+    margin: 0.1cm !important;
+    height: 0.9cm !important;
+    padding: 0.1cm !important;
+    min-width: 1cm !important;
+  }
+
+
+.ActionButton {
+  margin: 0.1cm !important;
+  height: 0.9cm !important;
+  padding: 0.1cm !important;
+  min-width: 2cm !important;
+}
+
+.ActionButton::first-letter {
+  text-decoration-line: underline;
+}
+
+.modal-foreground {
+  border-radius: 10px;
+  border: black solid 2px;
+}
+
+.modal-background {
+  opacity: 0.1 !important;
+}
+
+.OverlayForm {
+  padding: 0.5%;
+}
+
+.OverlayBar {
+  b_ackground-color: #0b296b;
+  width: 99%;
+  height: 1cm;
+  text-align: center;
+  b_order-top-left-radius: 10px;
+  b_order-top-right-radius: 10px;
+}
+
+/* overlay X*/
+.OverlayX{
+  float: left;
+  font-size:30px;
+  color:black;
+}
+
+.OverlayX:hover{
+  color:#eb4949;
+  cursor:pointer;
+}
+
+.BarTitle {
+  float: right;
+  color: #0d6efd;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-right: 0.2cm;
+  margin-top: 0.2cm;
+  white-space: nowrap;
+}
+
+.mat-paginator-container {
+  min-height: 1cm !important;
+  height: 1cm !important;
+}
+
+/* visibility of edit buttons on row hover */
+
+.tbl_btn{
+  border-color:transparent;
+  padding: 5px !important;
+}
+
+mat-table > mat-row > mat-cell.tbl_btn {
+  visibility: hidden;
+}
+
+mat-table > mat-row:hover > mat-cell.tbl_btn {
+  visibility: visible;
+}
+
+mat-table > mat-row.selected > mat-cell.tbl_btn {
+  visibility: visible;
+}
+
+/* for zebra */
+mat-row:nth-child(odd) {
+  background-color:#fbfbfb !important;
+}
+
+mat-row.selected:nth-child(odd) {
+  background-color:#CFD3F6 !important;
+  box-shadow: 0px 0px 20px lightgray;
+}
+
+
+/*Columns width*/
+.cBtn{
+  margin-right: 1px;
+  min-width: 27px;
+  max-width: 27px;
+}
+.cSmall{
+  margin-right:5px;
+  min-width: 60px;
+  max-width: 60px;
+  white-space: nowrap;
+  padding-right: 2px !important;
+}
+
+.cSmallMedium{
+  margin-right:5px;
+  min-width: 100px;
+  max-width: 100px;
+  white-space: nowrap;
+  padding-right: 2px !important;
+}
+
+.cMedium{
+  margin-right:5px;
+  min-width: 150px;
+  max-width: 150px;
+  white-space: nowrap;
+  padding-right: 2px !important;
+}
+
+.cLarge{
+  margin-right:5px;
+  min-width: 200px;
+  max-width: 200px;
+  white-space: nowrap;
+  padding-right: 2px !important;
+}
+.cExtraLarge{
+  margin-right:5px;
+  min-width: 400px;
+  max-width: 400px;
+  white-space: nowrap;
+  padding-right: 2px !important;
+}
+.cLTR{
+  text-align: left;
+  width: 100%;
+  direction: ltr;
+}
+
+.RepeatedItemsTableRow{
+  border-radius: 10px;
+  border: #0d6efd solid 2px;
+  width: 20vh;
+  height: 15vh;
+  padding: 5px;
+  margin: 5px;
+}
+
+.RepeatedItemsSelected {
+  background-color:transparent !important;
+  }
+
+.RepeatedItemsTableRow:hover {
+  border: black solid 2px;
+}
+
+.Lbl{
+  color:#0d6efd ;
+  white-space: nowrap;
+}
+
+.LblRequired{
+  color:#0d6efd ;
+  white-space: nowrap;
+
+  }
+  .LblRequired::after{
+    content: "*";
+  }
+
+.DataLbl{
+  color: black;
+  padding: 0.1cm;
+  vertical-align:middle;
+}
+
+/*Lookup*/
+.LookUpDiv{
+  position: relative;
+  display: block;
+  }
+
+.LookUpSpan{
+  position: absolute;
+  left:5%;
+  top:10%;
+  border: none;
+  background: transparent;
+  color:#0d6efd;
+  outline: none !important;
+  cursor: pointer;
+}
+
+
+.LookUpSpan:hover{
+  color:#eb4949;
+}
+/* Validation */
+input.ng-touched.ng-invalid {
+  border: red solid 2px;
+}
+
+
+mgError{
+  color: red;
+}
+
+/*Date control*/
+
+
+.InputDate{
+  display: flex;
+  padding: 0 0.8rem !important;
+  height: 2.1rem;
+  border-radius: 0.3rem;
+  }
+
+.MatFormDate{
+border: 1px solid #D7D7D7 ;
+border-radius: 0.3rem;
+padding-left: 0.25rem;
+display: inline-block;
+position: relative;
+text-align: left;
+margin-right: 5px;
+}
+
+.mat-form-field-wrapper{
+padding: 0px !important;
+}
+
+.mat-form-field-infix{
+width: 100% !important;
+padding: 0px !important;
+border-top:0px !important;
+}
+
+mat-datepicker-toggle button{
+border: none !important;
+}
+
+.mat-form-field-underline{
+display: none;
+}
+/*End of Date control*/
+
+.Hide{
+  visibility: hidden;
+  display: none;
+}
+
+
+/* tab contrrol*/
+
+.TabDiv{
+  border-bottom: 1px solid #0d6efd;
+width: 95vw;
+}
+
+.TabBody{
+padding: 00.1cm;
+  border-bottom: 1px solid #0d6efd;
+  border-left: 1px solid #0d6efd;
+  border-right: 1px solid #0d6efd;
+  width: 95vw;
+  height: 82vh;
+}
+.TabButtonSelected{
+  font-weight: bold;
+  border-bottom: 1px solid white !important;
+  margin-bottom: -1px;
+
+}
+
+.TabButton{
+  border-radius: 5px 5px 0 0;
+  margin-right: 2px;
+  border-bottom: transparent;
+}
+
+.TabTitle {
+  color: #0d6efd;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-right: 0.2cm;
+  ma_rgin-top: 0.2cm;
+  white-space: nowrap;
+}
+/* tab contrrol*/
+
+/* Badge*/
+.Badge {
+  display: inline-table;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  background-color:red;
+  border-radius: 50%;
+  position: relative;
+  left: -5px;
+  top: -3px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.BadgeContent {
+  font-size: 1.5vh;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+
+}
+
+.Dummy{
+  width: 1px;
+  height: 1px;
+  border:none;
+}
+
+
+
+/*
+
+
+
+Delete Log
+Sales - update log
+Monthly Calendar for Followups
+Weekly Calendar for Followups
+
+
+Calendar - to add edit and files with Rights
+
+Art team - to change to regular table
+bug - on reinit menu is not displayed and task # is not displayed (check all global vars)
+request form, view my requests
+remove pie
+clean Process manager from main
+move rights to setparam
+
+--------------------------------------
+help screen - done
+Change all remark to blob (varchar max) - done
+delete confirmation ( check that no recodrs are dependent on deleted record)
+   Contact :  Followup, showteam, artteam, files, cost
+   Org: Followup, shows, showteam, showOrgs, contacts, files, cost
+   Art: shows, artteam
+   Shows: followup, invites, showteam, showorg, show sales. cost
+
+files list - add entity - done
+add files to show info - X and rights - done
+add in orgs related contacts in tabs - done
+Cost tab in Show - wait for 4.8 - done
+email management - done
+pie charts - done
+KPI per show: tickets number, cost, invites, expected revenue against sales - done
+login - use cookies - done
+field validation - done
+my Tasks - done
+costs - done
+rights: none, view,add,update,delete - done
+Consolidate Tables - Done
+add artid, showid to Files, costs - done
+Attributes to contacts - done
+Attributes to org - done
+
+*/

@@ -13,4 +13,25 @@
     <RestData/>
   </WatchListItems>
 
+  <ExpandedItems>
+    <ExpandedItem>
+      <PrgIsn Val="3"/>
+      <TaskIsn Val="1"/>
+      <Type Val="2"/>
+      <HandlerIsn Val="33554435"/>
+    </ExpandedItem>
+    <ExpandedItem>
+      <PrgIsn Val="4"/>
+      <TaskIsn Val="33554439"/>
+      <Type Val="1"/>
+      <OperationIsn Val="33554434"/>
+    </ExpandedItem>
+    <ExpandedItem>
+      <PrgIsn Val="4"/>
+      <TaskIsn Val="1"/>
+      <Type Val="2"/>
+      <HandlerIsn Val="33554436"/>
+    </ExpandedItem>
+  </ExpandedItems>
+
 </Application>
