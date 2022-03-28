@@ -3,22 +3,12 @@
 
         <div class="SearchPane">
             <input class="form-control" [magic]="mgc.vSearch" style="width:30%" [formControlName]="mgc.vSearch" placeholder="Search" />
-        </div>
-        <div class="SearchPane">
-            <label class="Lbl" for="StyleId">Style</label>
-            <input class="form-control" style="width:30%" [formControlName]="mgc.V_vStyle" [magic]="mgc.V_vStyle" mgFormat
-              id="StyleId" />
-            <mgError [magic]=mgc.V_vStyle></mgError>
-      
-            <label class="Lbl" for="LocationId">Location</label>
-            <input class="form-control" style="width:30%" [formControlName]="mgc.V_vLocation" [magic]="mgc.V_vLocation" mgFormat
-              id="LocationId" />
-            <mgError [magic]=mgc.V_vLocation></mgError>
 
             <button class="btn btn-outline-primary ActionButton" accesskey="A" [magic]="mgc.btnAdd">
               Add
             </button>
-          </div>
+        </div>
+      
 
           <div class="form-group">
 
