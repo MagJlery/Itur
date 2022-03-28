@@ -28,7 +28,7 @@
           <RunProjectAs val="W"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738223" _time="46299" date="09/03/2022" time="12:51:39"/>
+          <LastModified _date="738242" _time="47215" date="28/03/2022" time="13:06:55"/>
         </Header>
         <Resource>
           <Columns/>
@@ -80,7 +80,7 @@
             <AllowPrintingData val="N"/>
           </SIDE_WIN>
           <WIN>
-            <OpenTaskWindow val="Y"/>
+            <OpenTaskWindow val="N"/>
             <CloseTaskWindow val="Y"/>
             <ForegroundWindow val="Y"/>
             <FlipFld val="N"/>

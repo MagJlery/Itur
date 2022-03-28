@@ -24,7 +24,7 @@
       <Theme val="Material Design"/>
       <GenerateMetadataOnly val="N"/>
       <MultiLingualSupport val="N"/>
-      <StartupProgramISN val="3"/>
+      <StartupProgramISN val="33554438"/>
       <UseWorkspace val="N"/>
     </WebClientData>
   </ProjectProperties>

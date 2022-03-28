@@ -3,9 +3,9 @@
 
   <MobileDesignMode Val="N"/>
 
-  <EditProjectMode Val="N"/>
+  <EditProjectMode Val="Y"/>
 
-  <DebugMode Val="Y"/>
+  <DebugMode Val="N"/>
 
   <RIAExecutionPlatform Val="Desktop"/>
 

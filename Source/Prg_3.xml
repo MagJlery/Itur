@@ -14,7 +14,6 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="LoginUser" ISN_2="1" LastIsn="1" id="3">
-          <Public val="login"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -30,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738229" _time="39162" date="15/03/2022" time="10:52:42"/>
+          <LastModified _date="738242" _time="47799" date="28/03/2022" time="13:16:39"/>
         </Header>
         <ItemIsn val="2"/>
         <Resource>

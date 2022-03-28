@@ -14,7 +14,6 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="Company" ISN_2="1" LastIsn="1" id="5">
-          <Public val="company"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -28,9 +27,9 @@
           <RoutePath val="Company"/>
           <External val="N"/>
           <Offline val="N"/>
-          <FormType val="M"/>
+          <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738242" _time="42090" date="28/03/2022" time="11:41:30"/>
+          <LastModified _date="738242" _time="47805" date="28/03/2022" time="13:16:45"/>
         </Header>
         <ItemIsn val="5"/>
         <Resource>
