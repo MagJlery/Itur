@@ -7,23 +7,21 @@ import {
 } from "@magic-xpa/angular";
 export enum MgControlName {
     IturHulCrud = "IturHulCrud",
-        Text_Style = "Text_Style",
-        edit_hul_style = "edit_hul_style",
-        Text_Location = "Text_Location",
-        edit_hul_location = "edit_hul_location",
-        btnSave = "btnSave",
-        btnCancel = "btnCancel",
+        vStyle = "vStyle",
+        vLocation = "vLocation",
+        bOK = "bOK",
+        bCancel = "bCancel",
 }
 export enum MgCustomProperties {}
 export class MgFormControlsAccessor {
     constructor(private fg: FormGroup, private magicServices: MagicServices) {}
 
-    get edit_hul_style(): FormControl {
-        return this.fg.controls[MgControlName.edit_hul_style] as FormControl;
+    get vStyle(): FormControl {
+        return this.fg.controls[MgControlName.vStyle] as FormControl;
     }
 
-    get edit_hul_location(): FormControl {
-        return this.fg.controls[MgControlName.edit_hul_location] as FormControl;
+    get vLocation(): FormControl {
+        return this.fg.controls[MgControlName.vLocation] as FormControl;
     }
 
     getTableChildFormControl(name: MgControlName): FormControl {

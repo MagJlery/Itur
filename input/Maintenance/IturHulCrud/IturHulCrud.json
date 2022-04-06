@@ -16,28 +16,10 @@
 	"controlType":	null,
 	"children":	[
 		{
-			"style":	{
-				"font":	1
-			},
-			"props":	{
-				"id":	"Text_Style",
-				"text":	"Style",
-				"common_line_id":	"line49"
-			},
-			"coordinates":	{
-				"x":	33,
-				"y":	52,
-				"width":	31,
-				"height":	15
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
 			"style":	null,
 			"props":	{
-				"id":	"edit_hul_style",
+				"id":	"vStyle",
+				"modifiable":	true,
 				"mgformat":	"mgFormat",
 				"attribute":	"A",
 				"common_line_id":	"line49"
@@ -53,28 +35,9 @@
 			"children":	null
 		},
 		{
-			"style":	{
-				"font":	1
-			},
-			"props":	{
-				"id":	"Text_Location",
-				"text":	"Location",
-				"common_line_id":	"line102"
-			},
-			"coordinates":	{
-				"x":	33,
-				"y":	105,
-				"width":	49,
-				"height":	15
-			},
-			"hint":	null,
-			"controlType":	"L",
-			"children":	null
-		},
-		{
 			"style":	null,
 			"props":	{
-				"id":	"edit_hul_location",
+				"id":	"vLocation",
 				"mgformat":	"mgFormat",
 				"attribute":	"A",
 				"common_line_id":	"line102"
@@ -92,7 +55,7 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"btnSave",
+				"id":	"bOK",
 				"format":	"Save",
 				"common_line_id":	"line166"
 			},
@@ -109,7 +72,7 @@
 		{
 			"style":	null,
 			"props":	{
-				"id":	"btnCancel",
+				"id":	"bCancel",
 				"format":	"Cancel",
 				"common_line_id":	"line166"
 			},

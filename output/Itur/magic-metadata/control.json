@@ -1,0 +1,21 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"vStyle",
+		"modifiable":	{
+			"value":	true,
+			"has_exp":	true
+		},
+		"mgformat":	"mgFormat",
+		"attribute":	"A"
+	},
+	"coordinates":	{
+		"x":	87,
+		"y":	49,
+		"width":	146,
+		"height":	20
+	},
+	"hint":	null,
+	"controlType":	"T",
+	"children":	null
+}

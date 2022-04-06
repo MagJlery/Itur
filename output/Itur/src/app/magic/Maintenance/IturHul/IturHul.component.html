@@ -2,7 +2,7 @@
     <div style="display: flex; flex-direction: column" [magic]="mgc.IturHul">
 
         <div class="SearchPane">
-            <input class="form-control" [magic]="mgc.vSearch" style="width:50%" [formControlName]="mgc.vSearch" placeholder="Search" />
+            <input class="form-control" [magic]="mgc.vSearch" style="width:100%" [formControlName]="mgc.vSearch" placeholder="Search" />
 
             <button class="btn btn-outline-primary ActionButton" accesskey="A" [magic]="mgc.btnAdd">
               Add
@@ -57,7 +57,7 @@
                         <mat-header-cell *matHeaderCellDef class="cBtn"> </mat-header-cell>
                         <mat-cell *matCellDef="let row" magicMark="magicTableRowContainer" class="tbl_btn cBtn">
                           <div *ngIf="mg.ifRowCreated(row)">
-                            <button class="btn btn-outline-primary tbl_btn" [magic]="mgc.bDelete" [rowId]="row.rowId" [matTooltip]="mg.getTitle(mgc.bDelete, row.rowId)">
+                            <button class="btn btn-outline-primary tbl_btn" [magic]="mgc.bDel" [rowId]="row.rowId" [matTooltip]="mg.getTitle(mgc.bDel, row.rowId)">
                               <i class="fa fa-trash"></i>
                             </button>
                           </div>
