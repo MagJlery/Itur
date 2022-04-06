@@ -13,4 +13,85 @@
     <RestData/>
   </WatchListItems>
 
+  <ExpandedItems>
+    <ExpandedItem>
+      <PrgIsn Val="33554442"/>
+      <TaskIsn Val="33554434"/>
+      <Type Val="2"/>
+      <HandlerIsn Val="33554434"/>
+    </ExpandedItem>
+    <ExpandedItem>
+      <PrgIsn Val="33554442"/>
+      <TaskIsn Val="33554448"/>
+      <Type Val="2"/>
+      <HandlerIsn Val="33554434"/>
+    </ExpandedItem>
+    <ExpandedItem>
+      <PrgIsn Val="33554442"/>
+      <TaskIsn Val="33554448"/>
+      <Type Val="1"/>
+      <OperationIsn Val="33554440"/>
+    </ExpandedItem>
+    <ExpandedItem>
+      <PrgIsn Val="33554440"/>
+      <TaskIsn Val="1"/>
+      <Type Val="2"/>
+      <HandlerIsn Val="33554440"/>
+    </ExpandedItem>
+    <ExpandedItem>
+      <PrgIsn Val="33554440"/>
+      <TaskIsn Val="1"/>
+      <Type Val="2"/>
+      <HandlerIsn Val="-1"/>
+    </ExpandedItem>
+    <ExpandedItem>
+      <PrgIsn Val="33554442"/>
+      <TaskIsn Val="33554434"/>
+      <Type Val="2"/>
+      <HandlerIsn Val="33554436"/>
+    </ExpandedItem>
+    <ExpandedItem>
+      <PrgIsn Val="33554442"/>
+      <TaskIsn Val="33554447"/>
+      <Type Val="1"/>
+      <OperationIsn Val="33554434"/>
+    </ExpandedItem>
+    <ExpandedItem>
+      <PrgIsn Val="33554440"/>
+      <TaskIsn Val="1"/>
+      <Type Val="2"/>
+      <HandlerIsn Val="33554438"/>
+    </ExpandedItem>
+    <ExpandedItem>
+      <PrgIsn Val="33554440"/>
+      <TaskIsn Val="1"/>
+      <Type Val="4"/>
+      <OperationIsn Val="33554512"/>
+    </ExpandedItem>
+    <ExpandedItem>
+      <PrgIsn Val="33554440"/>
+      <TaskIsn Val="1"/>
+      <Type Val="2"/>
+      <HandlerIsn Val="33554435"/>
+    </ExpandedItem>
+    <ExpandedItem>
+      <PrgIsn Val="33554438"/>
+      <TaskIsn Val="1"/>
+      <Type Val="2"/>
+      <HandlerIsn Val="33554436"/>
+    </ExpandedItem>
+    <ExpandedItem>
+      <PrgIsn Val="33554438"/>
+      <TaskIsn Val="1"/>
+      <Type Val="2"/>
+      <HandlerIsn Val="33554435"/>
+    </ExpandedItem>
+    <ExpandedItem>
+      <PrgIsn Val="33554439"/>
+      <TaskIsn Val="1"/>
+      <Type Val="1"/>
+      <OperationIsn Val="33554437"/>
+    </ExpandedItem>
+  </ExpandedItems>
+
 </Application>
