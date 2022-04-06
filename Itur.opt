@@ -3,7 +3,7 @@
 
   <MobileDesignMode Val="N"/>
 
-  <EditProjectMode Val="Y"/>
+  <EditProjectMode Val="N"/>
 
   <DebugMode Val="N"/>
 
