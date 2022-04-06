@@ -1,2 +1,3 @@
 0,MayaMag,makmak256@gmail.com
 1,Haim Cahal,haim@magnolia.co.il
+2,LilachMag,lilach@magnolia.co.il
