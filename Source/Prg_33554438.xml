@@ -28,7 +28,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738242" _time="55442" date="28/03/2022" time="15:24:02"/>
+          <LastModified _date="738251" _time="45371" date="06/04/2022" time="12:36:11"/>
         </Header>
         <ItemIsn val="6"/>
         <Resource>
@@ -302,13 +302,21 @@
               <LogicLine>
                 <Update FlowIsn="33554438">
                   <FieldID val="33554435"/>
-                  <WithValue val="33554433"/>
+                  <WithValue val="33554439"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="33554441" FlowIsn="33554451" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition Exp="33554442"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
               </LogicLine>
               <LogicLine>
                 <CallTask FlowIsn="33554440">
@@ -329,7 +337,7 @@
                   <ReturnValue val="33554436"/>
                   <IsRoute val="N"/>
                   <RetainFocus val="N"/>
-                  <Condition val="Y"/>
+                  <Condition Exp="33554440"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </CallTask>
@@ -459,6 +467,22 @@
           <Expression id="33554438">
             <ExpSyntax val="Trim({0,33554436})"/>
             <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="33554439">
+            <ExpSyntax val="Logon({0,33554433},{0,33554434})"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="33554440">
+            <ExpSyntax val="{0,33554435}"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="33554441">
+            <ExpSyntax val="'User not found in users list'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="33554442">
+            <ExpSyntax val="NOT ({0,33554435})"/>
+            <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
         <EVNT DESC="Login" FORCE_EXIT="N" id="33554433">

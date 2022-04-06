@@ -35,7 +35,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738251" _time="41902" date="06/04/2022" time="11:38:22"/>
+          <LastModified _date="738251" _time="43312" date="06/04/2022" time="12:01:52"/>
         </Header>
         <ItemIsn val="12"/>
         <Resource>
@@ -325,6 +325,18 @@
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent FlowIsn="33554494">
+                  <Event>
+                    <EventType val="I"/>
+                    <InternalEventID val="295"/>
+                  </Event>
+                  <Wait val="78"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
               </LogicLine>
               <LogicLine>
                 <RaiseEvent FlowIsn="33554441">
