@@ -5,13 +5,9 @@
 
   <EditProjectMode Val="Y"/>
 
-  <DebugMode Val="Y"/>
+  <DebugMode Val="N"/>
 
   <RIAExecutionPlatform Val="Desktop"/>
-
-  <Breakpoints>
-    <DelAll/>
-  </Breakpoints>
 
   <WatchListItems>
     <RestData/>
