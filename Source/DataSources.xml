@@ -40,7 +40,7 @@
 
   <PositionIndex val="1"/>
 
-  <IndexesLastIsn val="1"/>
+  <IndexesLastIsn val="2"/>
 
   <MetaTreeRTIndex val="-1"/>
 
@@ -65,7 +65,7 @@
         <_Dec id="181"/>
         <_Whole id="182" val="5"/>
         <_Negative id="192" val="Y"/>
-        <_FieldPhysical Name="Company" PIC_U="N5" Size="2" SqlType="SMALLINT" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldPhysical Name="Company" PIC_U="N5" Size="4" SqlType="SMALLINT" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
     </Column>
@@ -135,6 +135,29 @@
         <Segment>
           <Size val="20"/>
           <Column val="2"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+    <Index id="33554434" name="By_Company_Location">
+      <Mode val="N"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="V"/>
+      <PhysicalName val="By_Company_Location"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="20"/>
+          <Column val="3"/>
           <Order val="A"/>
         </Segment>
       </Segments>
