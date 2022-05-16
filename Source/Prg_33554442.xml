@@ -35,7 +35,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738271" _time="60822" date="26/04/2022" time="16:53:42"/>
+          <LastModified _date="738291" _time="53041" date="16/05/2022" time="14:44:01"/>
         </Header>
         <ItemIsn val="26"/>
         <Resource>
@@ -62,8 +62,8 @@
             <Column id="33554436" name="pStyle">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_UNICODE" id="1"/>
-                <Picture id="157" valUnicode="20"/>
-                <Size id="174" val="40"/>
+                <Picture id="157" valUnicode="U#####UUU"/>
+                <Size id="174" val="18"/>
                 <_FieldStyle id="276" val="1"/>
               </PropertyList>
             </Column>
@@ -78,8 +78,8 @@
             <Column id="33554433" name="vStyle">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_UNICODE" id="1"/>
-                <Picture id="157" valUnicode="20"/>
-                <Size id="174" val="40"/>
+                <Picture id="157" valUnicode="U#####UUU"/>
+                <Size id="174" val="18"/>
                 <_FieldStyle id="276" val="1"/>
                 <PartOfDataview id="449"/>
               </PropertyList>
@@ -191,6 +191,10 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="Y"/>
+                  <INT_RCMP_INFO>
+                    <v>33554434</v>
+                    <v>33554435</v>
+                  </INT_RCMP_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -501,15 +505,17 @@
             <Scope val="S"/>
             <EngineDirective val="S"/>
             <ShowMessage val="Y"/>
-            <Condition val="89"/>
+            <Condition val="78"/>
             <Event>
               <EventType val="S"/>
             </Event>
+            <Disabled val="1"/>
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
                 <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="33554451" FlowIsn="33554548" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TitleTxt="Error" VR_DISP="B">
                   <AppendToErrorLog val="Y"/>
+                  <Disabled val="1"/>
                   <Condition Exp="33554452"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -563,7 +569,7 @@
               <FormName id="311" valUnicode="IturHulCrud"/>
               <WindowType id="358" val="12"/>
             </PropertyList>
-            <Control _test_id="1" id="33554433">
+            <Control PDOD="128" _test_id="1" id="33554433">
               <PropertyList model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="33554433"/>
@@ -627,11 +633,11 @@
         </TaskForms>
         <Expressions>
           <Expression id="33554434">
-            <ExpSyntax val="{0,33554442}"/>
+            <ExpSyntax val="IF({0,33554444}='M'MODE,{0,33554442},'')"/>
             <ExpAttribute val="U"/>
           </Expression>
           <Expression id="33554435">
-            <ExpSyntax val="{0,33554443}"/>
+            <ExpSyntax val="IF({0,33554444}='M'MODE,{0,33554443},'')"/>
             <ExpAttribute val="U"/>
           </Expression>
           <Expression id="33554437">
@@ -675,7 +681,7 @@
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="33554451">
-            <ExpSyntax val="'The style is not exist'"/>
+            <ExpSyntax val="'The style does not exist'"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="33554452">
@@ -683,20 +689,12 @@
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="33554453">
-            <ExpSyntax val="'The location is not exist'"/>
+            <ExpSyntax val="'The location does not exist'"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="33554454">
-            <ExpSyntax val="{32768,33554434}&lt;>{0,33554443}"/>
+            <ExpSyntax val="{32768,33554434}&lt;>{0,33554434}"/>
             <ExpAttribute val="B"/>
-          </Expression>
-          <Expression id="33554455">
-            <ExpSyntax val="{0,33554433}"/>
-            <ExpAttribute val="U"/>
-          </Expression>
-          <Expression id="33554456">
-            <ExpSyntax val="{32768,33554433}"/>
-            <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
         <EVNT DESC="AddRecord" FORCE_EXIT="N" id="33554433">
@@ -1102,13 +1100,13 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="738271" _time="56850" date="26/04/2022" time="15:47:30"/>
+            <LastModified _date="738291" _time="53041" date="16/05/2022" time="14:44:01"/>
           </Header>
-          <ItemIsn val="27"/>
+          <ItemIsn val="28"/>
           <Resource>
             <DB id="33554433">
               <DataObject comp="-1" obj="1"/>
-              <Access val="W"/>
+              <Access val="R"/>
               <Share val="W"/>
               <Open val="N"/>
               <Cache val="Y"/>

@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738271" _time="45666" date="26/04/2022" time="12:41:06"/>
+          <LastModified _date="738291" _time="36941" date="16/05/2022" time="10:15:41"/>
         </Header>
         <ItemIsn val="20"/>
         <Resource>
@@ -511,7 +511,7 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="33554437" FlowIsn="33554511" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                <STP Buttons="K" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="33554437" FlowIsn="33554511" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
                   <AppendToErrorLog val="N"/>
                   <RetValVar val="33554449"/>
                   <Condition val="Y"/>
@@ -520,7 +520,7 @@
                 </STP>
               </LogicLine>
               <LogicLine>
-                <BLOCK EndBlock="33554518" EndBlockSegment="33554518" FlowIsn="33554512" Type="I">
+                <BLOCK EndBlock="33554588" EndBlockSegment="33554518" FlowIsn="33554512" Type="I">
                   <Condition Exp="33554438"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -556,7 +556,38 @@
                 </RaiseEvent>
               </LogicLine>
               <LogicLine>
-                <END_BLK FlowIsn="33554518"/>
+                <BLOCK EndBlock="33554588" EndBlockSegment="33554588" FlowIsn="33554518" Type="E">
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent FlowIsn="33554582">
+                  <Event>
+                    <EventType val="I"/>
+                    <InternalEventID val="33"/>
+                  </Event>
+                  <Wait val="78"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent FlowIsn="33554583">
+                  <Event>
+                    <EventType val="I"/>
+                    <InternalEventID val="295"/>
+                  </Event>
+                  <Wait val="78"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="33554588"/>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -866,7 +897,7 @@
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="33554437">
-            <ExpSyntax val="'You want delete the record?'"/>
+            <ExpSyntax val="'Do you want to delete the record?'"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="33554438">
@@ -884,10 +915,6 @@
           <Expression id="33554443">
             <ExpSyntax val="'M'MODE"/>
             <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="33554444">
-            <ExpSyntax val="'FALSE'LOG"/>
-            <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
         <EVNT DESC="CreateNewReq" FORCE_EXIT="N" id="33554433">
